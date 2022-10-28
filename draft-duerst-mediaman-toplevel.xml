@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-model href="rfc7991bis.rnc"?>  
-<?xml-stylesheet type="text/xsl" href="rfc2629.xslt" ?>
+<!--<?xml-stylesheet type="text/xsl" href="rfc2629.xslt" ?>-->
 <!-- This third-party XSLT can be enabled for direct transformations in XML processors, including most browsers -->
 <!DOCTYPE rfc [
   <!ENTITY nbsp    "&#160;">
@@ -78,26 +78,31 @@
 	 If this element is not present, the default is "Network Working Group",
         which is used by the RFC Editor as a nod to the history of the IETF. -->
 
-   <keyword>Top Level Media Type</keyword>
+   <keyword>Media Type, Top Level</keyword>
     <!-- Keywords will be incorporated into HTML output
         files in a meta tag but they have no effect on text or nroff
         output. If you submit your draft to the RFC Editor, the
         keywords will be used for the search engine. -->
 
    <abstract>
-      <t>This document intends to define best practices for defining new top-level media types.
+      <t>The goal of this document is to identify best practices for defining new top-level media types.
         It updates <xref target="RFC6838" format="default">RFC 6838</xref>, when approved.
         Comments and discussion about this document should be directed to media-types@ietf.org,
         the mailing list of the Media Type Maintenance (mediaman) WG.</t>
     </abstract>
   </front>
   <middle>
-    <section numbered="true" toc="default">
-      <name>Introduction</name>
+    <section numbered="true" toc="default"><name>Introduction</name>
       <t>This document defines best practices for defining new top-level media types.
         <xref target="RFC6838" format="default">RFC&nbsp;6838</xref> very consisely defines
         the conditions for defining additional top-level media types. This document
-        expands this slightly.</t>
+        expands this and therefore updates <xref target="RFC6838" format="default">RFC&nbsp;6838</xref>.</t>
+      <t>This document is currently a personal draft, but is intended for adoption by the
+        Media Type Maintenance (mediaman) IETF WG. Comments and discussion about this document
+        should be directed to that WG's mailing list at media-types@ietf.org.</t>
+      <t>Currently, this document is a collection of information, ideas, and text snippets
+      that may be helpful in creating the actual specification.
+      None of the current language is intended to be final.</t>
       <section numbered="true" toc="default">
         <name>Requirements Language</name>
         <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
@@ -105,14 +110,61 @@
        document are to be interpreted as described in <xref target="RFC2119" format="default">RFC 2119</xref>.</t>
       </section>
     </section>
-
-    <section>
-      <name>The real beef@@@@</name>
-      <t>For reference in further discussion, we first cite the two paragraphs
-      we are thinking about updating.</t>
-      <section>
-        <name>RFC 6838, section 4.2.5</name>
-        <t>Section 4.2.5 of RFC 6838 reads as follows:</t>
+    <section><name>Top-Level Media Type History</name>
+      <t>This section shortly describes the history of top-level media types, with a particular
+      emphasis on the (rather rare) adoption of new top-level types.</t>
+      <t><xref target="RFC1341" format="default">RFC 1341</xref> first defined the
+      structuring of content types into (top-level) type and subtype, and introduced
+      the 'text', 'multipart', 'message', 'image', 'audio', 'video', and 'application' top-level types.
+      That specification also allowed top-level types starting with 'X-'.
+      With respect to new top-level types, it said the following:</t>
+      <blockquote>An initial set of seven Content-Types  is  defined  by  this
+        document.   This  set  of  top-level names is intended to be
+        substantially complete.  It is expected  that  additions  to
+        the   larger   set  of  supported  types  can  generally  be
+        accomplished by  the  creation  of  new  subtypes  of  these
+        initial  types.   In the future, more top-level types may be
+        defined only by an extension to this standard.   If  another
+        primary  type is to be used for any reason, it must be given
+        a name starting  with  "X-"  to  indicate  its  non-standard
+        status  and  to  avoid  a  potential  conflict with a future
+        official name.</blockquote>
+        <t>The first time an additional top-level type was defined was in
+          <xref target="RFC1437" format="default">RFC 1437</xref>, but this
+          was purely for entertainment purposes (please check date).</t>
+      <t><xref target="RFC2046" format="default">RFC 2046</xref> discouraged
+      the use of "X-" for (new) top-level types, with the following words:</t>
+      <blockquote>In general, the use of "X-" top-level types is strongly discouraged.
+        Implementors should invent subtypes of the existing types whenever
+        possible. In many cases, a subtype of "application" will be more
+        appropriate than a new top-level type.</blockquote>
+      <t><xref target="RFC2048" format="default">RFC 2048</xref>, published
+        at the same time as <xref target="RFC2046" format="default">RFC 2046</xref>,
+        defined requirements for the definition of new top-level types:</t>
+      <blockquote>In some cases a new media type may not "fit" under any currently
+        defined top-level content type. Such cases are expected to be quite
+        rare. However, if such a case arises a new top-level type can be
+        defined to accommodate it. Such a definition must be done via
+        standards-track RFC; no other mechanism can be used to define
+        additional top-level content types.</blockquote>
+      <t>><xref target="RFC4735" format="default">RFC 4735</xref> introduced the
+      'example' top-level type for use in documentation examples.</t>
+      <t>At some point, the 'model' top-level type was introduced.
+      Any pointers to the defining document are greatly appreciated.</t>
+      <t>The 'font' top-level media type was defined in
+        <xref target="RFC8081" format="default">RFC 8081</xref>,
+        a work of the 'justfont' IETF WG, in 2017.
+      </t>
+      <t>There is ongoing work on defining a new 'haptics' top-level media type
+        in <xref target="HAPTICS" format="default">draft-ietf-mediaman-haptics</xref>.</t>
+      <t>Wikipedia (at https://en.wikipedia.org/wiki/Media_type) reports
+      the unofficial use of a 'chemical' top-level type.</t>
+      
+      <t>The document currently defining the requirements for new top-level
+        media types is <xref target="RFC6838" format="default">RFC 6838</xref>.
+        Because we are trying to update what it says, we are citing the two
+        relevant sections, Section 4.2.5 and Section 4.2.7, here.</t>
+        <blockquote>
         <t>4.2.5.  Application Media Types</t>
           
           <t>The "application" top-level type is to be used for discrete data that
@@ -142,11 +194,8 @@
           This does not mean, however, that any application program name may
           simply be used freely as a subtype of "application"; the subtype
           needs to be registered.</t>
-          
-      </section>
-      <section>
-        <name>RFC 6838, section 4.2.7</name>
-        <t>Section 4.2.7 of RFC 6838 reads as follows:</t>
+        </blockquote>
+        <blockquote>
         <t>4.2.7.  Additional Top-Level Types</t>
           
           <t>In some cases, a new media type may not "fit" under any currently
@@ -155,24 +204,53 @@
           defined to accommodate it.  Definition of a new top-level type name
           MUST be done via a Standards Track RFC; no other mechanism can be
           used to define additional type names.</t>
-      </section>
-      <section>
-        <name>History of Additional Top-Level Types</name>
-        <t>The first time an additional top-level type was defined was in
-          <xref target="RFC1437" format="default">RFC 1437</xref>, but this
-          was purely for entertainment purposes (please watch date).</t>
-      </section>
+        </blockquote>
+      <t>The two sections above are not strictly aligned, because the first says
+      anything that doesn't go under a more specific type can go under the 'application'
+      top-level type, while the later section allows for new top-level types.</t>
     </section>
-    <section anchor="IANA" numbered="true" toc="default">
-      <name>IANA Considerations</name>
-      <t>This memo includes no request to IANA.</t>
+    <section><name>Potential Criteria for New Top-Level Media Types</name>
+      <t>This section describes potential criteria for new top-level media types,
+        including criteria already defined in <xref target="RFC6838" format="default">RFC 6838</xref>.
+        Further work is needed to distinguish between required and optional criteria.
+        But it is possible that we end up with just "we didn't find any objective criteria
+        for new top-level types, and we will stop looking for such criteria".</t>
+      <ul>
+        <li>New top level types are rare enough and different enough that each application needs to be evaluated separately.</li>
+        <li>Need to be documented in a Standards Track RFC.</li>
+        <li>This Standards Track RFC should include initial registrations of actual types.</li>
+        <li>May (or may not) need an IETF WG for definition.</li>
+        <li>Existence of a certain number of subtypes that would be grouped under the new top-level type.
+        At a minimum, one actual subtype should exist. But the existence of a single subtype
+        should not be enough; it should be clear that new similar types may appear in the future.</li>
+        <li>Existing wide use of an undefined top-level type may be an indication of a need,
+        and therefore an argument for formally defining this new top-level type.</li>
+        <li>On the other hand, the use of undefined top-level types is highly discouraged.</li>
+        <li>Top-level types mostly help humans; it is unclear to what extent top-level types
+        are used by applications directly, as opposed to application dispatching and behavior triggered
+        by the type/subtype combination. [More information needed/appreciated here.]
+        Therefore, evaluating how a new top-level type helps humans understand types
+        may be crucial. But as often with humans, opinions may widely differ.</li>
+        <li>Need for clear criteria for what types do and don't fall under the new top-level type.</li>
+        <li>Desirability for common parameters: The fact that a group of (potential) types have
+        (mostly) common parameters may be an indication that these belong under a common (new) top-level type.</li>
+      </ul>
     </section>
-    <section anchor="Security" numbered="true" toc="default">
-      <name>Security Considerations</name>
-      <t>To be completed.</t>
+    <section anchor="IANA" numbered="true" toc="default"><name>IANA Considerations</name>
+      <t>There is currently no registry of top-level media types,
+        but the list of top-level types available for registering subtypes
+        is available at https://www.iana.org/assignments/media-types/media-types.xhtml.</t>
+        <t>There may be a question of whether there is a need for a formal registry of
+        top-level types. Such a registry might contain pointers to the definitions
+        of the top-level types. As a concrete example, the author of this document
+        has not yet been able to find the definition of the 'model' top level type.</t>
     </section>
-    <section anchor="Acknowledgements" numbered="false" toc="default">
-      <name>Acknowledgements</name>
+    <section anchor="Security" numbered="true" toc="default"><name>Security Considerations</name>
+      <t>This document as such is not expected to introduce any security issues.
+        The security issues of introducing a new top-level media type MUST be evaluated
+        and documented carefully.</t>
+    </section>
+    <section anchor="Acknowledgements" numbered="false" toc="default"><name>Acknowledgements</name>
       <t>The initial encouragement for writing this draft came from Harald Alvestrand.
       Further encouragement was provided by Murray S. Kucherawy. Both Harald and
       Murray also provided ideas for actual text. Without them, this memo would
@@ -184,17 +262,6 @@
 
  <back>
     <!-- References split into informative and normative -->
-
-   <!-- There are 2 ways to insert reference entries from the citation libraries:
-    1. define an ENTITY at the top, and use "ampersand character"RFC2629; here (as shown)
-    2. simply use a PI "less than character"?rfc include="reference.RFC.2119.xml"?> here
-       (for I-Ds: include="reference.I-D.narten-iana-considerations-rfc2434bis.xml")
-
-    Both are cited textually in the same manner: by using xref elements.
-    If you use the PI option, xml2rfc will, by default, try to find included files in the same
-    directory as the including file. You can also define the XML_LIBRARY environment variable
-    with a value containing a set of directories to search.  These can be either in the local
-    filing system or remote ones accessed by http (http://domain/dir/... ).-->
 
    <references>
       <name>References</name>
@@ -217,37 +284,115 @@
           </front>
         </reference>
  
-        <reference  anchor='RFC6838' target='https://www.rfc-editor.org/info/rfc6838'>
-          <front>
-            <title>Media Type Specifications and Registration Procedures</title>
-            <author initials='N.' surname='Freed' fullname='N. Freed'><organization /></author>
-            <author initials='J.' surname='Klensin' fullname='J. Klensin'><organization /></author>
-            <author initials='T.' surname='Hansen' fullname='T. Hansen'><organization /></author>
-            <date year='2013' month='January' />
-            <abstract><t>This document defines procedures for the specification and registration of media types for use in HTTP, MIME, and other Internet protocols.  This memo documents an Internet Best Current Practice.</t></abstract>
-          </front>
-          <seriesInfo name='BCP' value='13'/>
-          <seriesInfo name='RFC' value='6838'/>
-          <seriesInfo name='DOI' value='10.17487/RFC6838'/>
-        </reference>
+    <reference  anchor='RFC6838' target='https://www.rfc-editor.org/info/rfc6838'>
+      <front>
+        <title>Media Type Specifications and Registration Procedures</title>
+        <author initials='N.' surname='Freed' fullname='N. Freed'><organization /></author>
+        <author initials='J.' surname='Klensin' fullname='J. Klensin'><organization /></author>
+        <author initials='T.' surname='Hansen' fullname='T. Hansen'><organization /></author>
+        <date year='2013' month='January' />
+        <abstract><t>This document defines procedures for the specification and registration of media types for use in HTTP, MIME, and other Internet protocols.  This memo documents an Internet Best Current Practice.</t></abstract>
+      </front>
+      <seriesInfo name='BCP' value='13'/>
+      <seriesInfo name='RFC' value='6838'/>
+      <seriesInfo name='DOI' value='10.17487/RFC6838'/>
+    </reference>
         
 
       </references>
       <references>
         <name>Informative References</name>
   
+        <reference  anchor='RFC1341' target='https://www.rfc-editor.org/info/rfc1341'>
+          <front>
+            <title>MIME (Multipurpose Internet Mail Extensions): Mechanisms for Specifying and Describing the Format of Internet Message Bodies</title>
+            <author initials='N.' surname='Borenstein' fullname='N. Borenstein'><organization /></author>
+            <author initials='N.' surname='Freed' fullname='N. Freed'><organization /></author>
+            <date year='1992' month='June' />
+            <abstract><t>This document redefines the format of message bodies to allow multi-part textual and non-textual message bodies to be represented and exchanged without loss of information.  [STANDARDS-TRACK]</t></abstract>
+          </front>
+          <seriesInfo name='RFC' value='1341'/>
+          <seriesInfo name='DOI' value='10.17487/RFC1341'/>
+        </reference>
         <reference  anchor='RFC1437' target='https://www.rfc-editor.org/info/rfc1437'>
           <front>
             <title>The Extension of MIME Content-Types to a New Medium</title>
             <author initials='N.' surname='Borenstein' fullname='N. Borenstein'><organization /></author>
             <author initials='M.' surname='Linimon' fullname='M. Linimon'><organization /></author>
             <date year='1993' month='April' />
-            <abstract><t>This document defines one particular type of MIME data, the matter- transport/sentient-life-form type.  This memo provides information for the Internet community.  It does not specify an Internet standard.</t></abstract>
+            <abstract><t>This document defines one particular type of MIME data, the matter- transport/sentient-life-form type.
+              This memo provides information for the Internet community.  It does not specify an Internet standard.</t></abstract>
           </front>
           <seriesInfo name='RFC' value='1437'/>
           <seriesInfo name='DOI' value='10.17487/RFC1437'/>
         </reference>
-        
+        <reference  anchor='RFC2046' target='https://www.rfc-editor.org/info/rfc2046'>
+          <front>
+            <title>Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types</title>
+            <author initials='N.' surname='Freed' fullname='N. Freed'><organization /></author>
+            <author initials='N.' surname='Borenstein' fullname='N. Borenstein'><organization /></author>
+            <date year='1996' month='November' />
+            <abstract><t>This second document defines the general structure of the MIME media typing system and defines an initial set of media types.  [STANDARDS-TRACK]</t></abstract>
+          </front>
+          <seriesInfo name='RFC' value='2046'/>
+          <seriesInfo name='DOI' value='10.17487/RFC2046'/>
+        </reference>
+        <reference  anchor='RFC2048' target='https://www.rfc-editor.org/info/rfc2048'>
+          <front>
+            <title>Multipurpose Internet Mail Extensions (MIME) Part Four: Registration Procedures</title>
+            <author initials='N.' surname='Freed' fullname='N. Freed'><organization /></author>
+            <author initials='J.' surname='Klensin' fullname='J. Klensin'><organization /></author>
+            <author initials='J.' surname='Postel' fullname='J. Postel'><organization /></author>
+            <date year='1996' month='November' />
+            <abstract><t>This set of documents, collectively called the Multipurpose Internet Mail Extensions, or MIME, redefines the format of messages.  This fourth document, RFC 2048, specifies various IANA registration procedures for some MIME facilities.  This document specifies an Internet Best Current Practices for the Internet Community, and requests discussion and suggestions for improvements.</t></abstract>
+          </front>
+          <seriesInfo name='RFC' value='2048'/>
+          <seriesInfo name='DOI' value='10.17487/RFC2048'/>
+        </reference>
+        <reference  anchor='RFC4735' target='https://www.rfc-editor.org/info/rfc4735'>
+          <front>
+            <title>Example Media Types for Use in Documentation</title>
+            <author initials='T.' surname='Taylor' fullname='T. Taylor'><organization /></author>
+            <date year='2006' month='October' />
+            <abstract><t>This document is registration for the 'example' media type and 'example' subtypes within the standards tree.  The 'example/*' and '*/example' media types are defined for documentation purposes only.  [STANDARDS-TRACK]</t></abstract>
+          </front>
+          <seriesInfo name='RFC' value='4735'/>
+          <seriesInfo name='DOI' value='10.17487/RFC4735'/>
+        </reference>
+        <reference  anchor='RFC8081' target='https://www.rfc-editor.org/info/rfc8081'>
+          <front>
+            <title>The &quot;font&quot; Top-Level Media Type</title>
+            <author initials='C.' surname='Lilley' fullname='C. Lilley'><organization /></author>
+            <date year='2017' month='February' />
+            <abstract><t>This memo serves to register and document the &quot;font&quot; top-level media type,
+              under which subtypes for representation formats for fonts may be registered.
+              This document also serves as a registration application for a set of intended subtypes,
+              which are representative of some existing subtypes already in use, and currently registered under the &quot;application&quot; tree by their separate registrations.</t></abstract>
+          </front>
+          <seriesInfo name='RFC' value='8081'/>
+          <seriesInfo name='DOI' value='10.17487/RFC8081'/>
+        </reference>
+        <reference anchor='HAPTICS' target='https://datatracker.ietf.org/doc/draft-ietf-mediaman-haptics/'>
+          <front>
+            <title abbrev="The 'haptics' Top-level Media Type">The 'haptics' Top-level Media Type</title>
+            <seriesInfo name="RFC" status="standards" stream="IETF" value="XXXX"/>
+            <author fullname="Yeshwant K. Muthusamy" surname="Muthusamy" initials="Y. K.">  
+              <organization>Immersion Corporation</organization>
+            </author>
+            <author fullname="Chris Ullrich" surname="Ullrich" initials="C.">
+              <organization>Immersion Corporation</organization>              
+            </author>
+            <date/>
+            <area>Internet</area>
+            <workgroup>MEDIAMAN</workgroup>
+            <abstract>
+              <t>This memo serves to register and document the 'haptics' top-level media type,
+                under which subtypes for representation formats for haptics may be registered.
+                This document also serves as a registration application for a set of intended subtypes,
+                which are representative of some existing subtypes already in use.</t>
+            </abstract>
+          </front>
+        </reference>
       </references>
     </references>
    
