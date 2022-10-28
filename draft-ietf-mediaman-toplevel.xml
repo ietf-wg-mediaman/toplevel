@@ -18,7 +18,7 @@
       xmlns:xi="http://www.w3.org/2001/XInclude"
       category="bcp"
       consensus="true"
-      docName="draft-duerst-mediaman-toplevel-00"
+      docName="draft-ietf-mediaman-toplevel-00"
       ipr="trust200902"
       obsoletes=""
       updates="6838"
@@ -43,7 +43,7 @@
         full title is longer than 39 characters -->
 
    <title abbrev="New Top Level Media Types">Guidelines for the Definition of New Top Level Media Types</title>
-    <seriesInfo name="Internet-Draft" value="draft-duerst-mediaman-toplevel-00"/>
+    <seriesInfo name="Internet-Draft" value="draft-ietf-mediaman-toplevel-00"/>
 
    <!-- add 'role="editor"' below for the editors if appropriate -->
    <author fullname="Martin J. Dürst" initials="M.J." surname="Dürst">
@@ -72,7 +72,7 @@
    <!-- Meta-data Declarations -->
 
    <area>Applications and Real-Time</area>
-   <workgroup>IETF<!--MEDIAMAN--></workgroup>
+   <workgroup>MEDIAMAN</workgroup>
     <!-- WG name at the upperleft corner of the doc,
         IETF is fine for individual submissions.  
 	 If this element is not present, the default is "Network Working Group",
@@ -86,7 +86,7 @@
 
    <abstract>
       <t>The goal of this document is to identify best practices for defining new top-level media types.
-        It updates <xref target="RFC6838" format="default">RFC 6838</xref>, when approved.
+        It updates RFC 6838, when approved.
         Comments and discussion about this document should be directed to media-types@ietf.org,
         the mailing list of the Media Type Maintenance (mediaman) WG.</t>
     </abstract>
@@ -156,7 +156,7 @@
       </t>
       <t>There is ongoing work on defining a new 'haptics' top-level media type
         in <xref target="HAPTICS" format="default">draft-ietf-mediaman-haptics</xref>.</t>
-      <t>Wikipedia (at https://en.wikipedia.org/wiki/Media_type) reports
+      <t>Wikipedia (at https://en.wikipedia.org/wiki/Chemical_file_format) reports
       the unofficial use of a 'chemical' top-level type.</t>
       
       <t>The document currently defining the requirements for new top-level
@@ -256,16 +256,19 @@
     </section>
     <section anchor="Changelog" numbered='false' toc='default'><name>Changelog</name>
       <t>RFC Editor, please remove this section before publication.</t>
-      <section numbered='false'><name>Changes from -00 to -01</name>
+      <section numbered='false'><name>Changes from draft-duerst-mediaman-toplevel-00
+                                      to draft-ietf-mediaman-toplevel-01</name>
         <ul>
           <li>Add reference to <xref target="RFC2077" format="default">RFC 2077</xref> for definition of 'model' type.</li>
           <li>Add examples of use of top-level types for dispatch.</li>
           <li>Remove a stray '&gt;' before the mention of <xref target="RFC4735" format="default">RFC 4735</xref>.</li>
+          <li>Change link to chemical/* Wikipedia page.</li>
+          <li>Remove reference in abstract (pointed out by idnits).</li>
         </ul>
       </section>
     </section>
     <section anchor="Acknowledgements" numbered="false" toc="default"><name>Acknowledgements</name>
-      <t>The initial encouragement for writing this draft came from Harald Alvestrand.
+      <t>Continuous encouragement for writing this draft came from Harald Alvestrand.
       Further encouragement was provided by Murray S. Kucherawy. Both Harald and
       Murray also provided ideas for actual text. Without them, this memo would
       never have reached even the first draft stage.
