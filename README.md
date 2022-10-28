@@ -1,5 +1,5 @@
 # Repository for draft-ietf-mediaman-toplevel
 
-This repository does not track the draft at the moment. Instead, the issue tracker is used to track issues only.
+This repository does track draft-ietf-mediaman-toplevel. Also, the issue tracker is used to track some issues. Comments brought up on the mailing list will be mostly addressed directly, without necessarily creating issues.
 
 The current version is draft-ietf-mediaman-toplevel-00.
