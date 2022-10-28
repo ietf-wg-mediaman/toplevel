@@ -147,10 +147,9 @@
         defined to accommodate it. Such a definition must be done via
         standards-track RFC; no other mechanism can be used to define
         additional top-level content types.</blockquote>
+      <t>The 'model' top-level type was introduced by <xref target="RFC2077" format="default">RFC 2077</xref> in 1997.</t>
       <t>><xref target="RFC4735" format="default">RFC 4735</xref> introduced the
       'example' top-level type for use in documentation examples.</t>
-      <t>At some point, the 'model' top-level type was introduced.
-      Any pointers to the defining document are greatly appreciated.</t>
       <t>The 'font' top-level media type was defined in
         <xref target="RFC8081" format="default">RFC 8081</xref>,
         a work of the 'justfont' IETF WG, in 2017.
@@ -226,11 +225,16 @@
         <li>Existing wide use of an undefined top-level type may be an indication of a need,
         and therefore an argument for formally defining this new top-level type.</li>
         <li>On the other hand, the use of undefined top-level types is highly discouraged.</li>
-        <li>Top-level types mostly help humans; it is unclear to what extent top-level types
-        are used by applications directly, as opposed to application dispatching and behavior triggered
-        by the type/subtype combination. [More information needed/appreciated here.]
-        Therefore, evaluating how a new top-level type helps humans understand types
-        may be crucial. But as often with humans, opinions may widely differ.</li>
+        <li>Top-level types can help humans with understading and debugging.
+          Therefore, evaluating how a new top-level type helps humans understand types
+          may be crucial. But as often with humans, opinions may widely differ.</li>
+        <li>Top-level types are also used frequently in dispatching code.
+          For example "multipart/*" is frequently handled as multipart/mixed, without understanding of a specific subtype.
+          The top-level media types 'image', 'audio', and 'video' are also often handled generically.
+          Documents with these top-level media types can be passed to applications handling a wide variety
+          of image, audio, or video formats. HTML generating applications can select different HTML elements
+          (e.g. &lt;img> or &lt;audio>) for including data of different top-level types.
+          Applications can select different icons to represent unknown types in different top-level types.</li>
         <li>Need for clear criteria for what types do and don't fall under the new top-level type.</li>
         <li>Desirability for common parameters: The fact that a group of (potential) types have
         (mostly) common parameters may be an indication that these belong under a common (new) top-level type.</li>
@@ -243,18 +247,30 @@
         <t>There may be a question of whether there is a need for a formal registry of
         top-level types. Such a registry might contain pointers to the definitions
         of the top-level types. As a concrete example, the author of this document
-        has not yet been able to find the definition of the 'model' top level type.</t>
+        has not yet been able to find the definition of the 'model' top-level type.</t>
     </section>
     <section anchor="Security" numbered="true" toc="default"><name>Security Considerations</name>
       <t>This document as such is not expected to introduce any security issues.
         The security issues of introducing a new top-level media type MUST be evaluated
         and documented carefully.</t>
     </section>
+    <section anchor="Changelog" numbered='false' toc='default'><name>Changelog</name>
+      <t>RFC Editor, please remove this section before publication.</t>
+      <section numbered='false'><name>Changes from -00 to -01</name>
+        <ul>
+          <li>Add reference to <xref target="RFC2077" format="default">RFC 2077</xref> for definition of 'model' type.</li>
+          <li>Add examples of use of top-level types for dispatch.</li>
+        </ul>
+      </section>
+    </section>
     <section anchor="Acknowledgements" numbered="false" toc="default"><name>Acknowledgements</name>
       <t>The initial encouragement for writing this draft came from Harald Alvestrand.
       Further encouragement was provided by Murray S. Kucherawy. Both Harald and
       Murray also provided ideas for actual text. Without them, this memo would
-      never have reached even the first draft stage.</t>
+      never have reached even the first draft stage.
+      Alexey Melnikov provided the difficult to find pointer
+      to <xref target="RFC2077" format="default">RFC 2077</xref>
+      and examples for applications dispatching on top level media types.</t>
     </section>
     
   </middle>
@@ -348,6 +364,18 @@
           </front>
           <seriesInfo name='RFC' value='2048'/>
           <seriesInfo name='DOI' value='10.17487/RFC2048'/>
+        </reference>
+        <reference  anchor='RFC2077' target='https://www.rfc-editor.org/info/rfc2077'>
+          <front>
+            <title>The Model Primary Content Type for Multipurpose Internet Mail Extensions</title>
+            <author initials='S.' surname='Nelson' fullname='S. Nelson'><organization /></author>
+            <author initials='C.' surname='Parks' fullname='C. Parks'><organization /></author>
+            <author initials='Mitra' surname='' fullname='Mitra'><organization /></author>
+            <date year='1997' month='January' />
+            <abstract><t>The purpose of this memo is to propose an update to Internet RFC 2045 to include a new primary content-type to be known as &quot;model&quot;.  [STANDARDS-TRACK]</t></abstract>
+          </front>
+          <seriesInfo name='RFC' value='2077'/>
+          <seriesInfo name='DOI' value='10.17487/RFC2077'/>
         </reference>
         <reference  anchor='RFC4735' target='https://www.rfc-editor.org/info/rfc4735'>
           <front>
