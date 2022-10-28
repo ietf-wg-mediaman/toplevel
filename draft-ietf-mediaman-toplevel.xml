@@ -43,7 +43,7 @@
         full title is longer than 39 characters -->
 
    <title abbrev="New Top Level Media Types">Guidelines for the Definition of New Top Level Media Types</title>
-    <seriesInfo name="Internet-Draft" value="draft-ietf-mediaman-toplevel-00"/>
+    <seriesInfo name="Internet-Draft" value="draft-ietf-mediaman-toplevel-01"/>
 
    <!-- add 'role="editor"' below for the editors if appropriate -->
    <author fullname="Martin J. Dürst" initials="M.J." surname="Dürst">
@@ -256,6 +256,12 @@
     </section>
     <section anchor="Changelog" numbered='false' toc='default'><name>Changelog</name>
       <t>RFC Editor, please remove this section before publication.</t>
+      <section numbered='false'><name>Changes from draft-ietf-mediaman-toplevel-00
+        to draft-ietf-mediaman-toplevel-01</name>
+        <ul>
+          <li>@@@@@</li>
+        </ul>
+      </section>
       <section numbered='false'><name>Changes from draft-duerst-mediaman-toplevel-00
                                       to draft-ietf-mediaman-toplevel-01</name>
         <ul>
