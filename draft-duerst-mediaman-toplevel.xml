@@ -148,7 +148,7 @@
         standards-track RFC; no other mechanism can be used to define
         additional top-level content types.</blockquote>
       <t>The 'model' top-level type was introduced by <xref target="RFC2077" format="default">RFC 2077</xref> in 1997.</t>
-      <t>><xref target="RFC4735" format="default">RFC 4735</xref> introduced the
+      <t><xref target="RFC4735" format="default">RFC 4735</xref> introduced the
       'example' top-level type for use in documentation examples.</t>
       <t>The 'font' top-level media type was defined in
         <xref target="RFC8081" format="default">RFC 8081</xref>,
@@ -260,6 +260,7 @@
         <ul>
           <li>Add reference to <xref target="RFC2077" format="default">RFC 2077</xref> for definition of 'model' type.</li>
           <li>Add examples of use of top-level types for dispatch.</li>
+          <li>Remove a stray '&gt;' before the mention of <xref target="RFC4735" format="default">RFC 4735</xref>.</li>
         </ul>
       </section>
     </section>
