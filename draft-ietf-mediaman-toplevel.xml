@@ -110,6 +110,36 @@
        document are to be interpreted as described in <xref target="RFC2119" format="default">RFC 2119</xref>.</t>
       </section>
     </section>
+    <section><name>Rules for the Registration of New Top-Level Media Types</name>
+      <t>This section describes the rules and criteria for new top-level media types,
+        including criteria already defined in <xref target="RFC6838" format="default">RFC 6838</xref>.
+        Further work is needed to distinguish between required and optional criteria.</t>
+      <ul>
+        <li>New top level types are rare enough and different enough that each application needs to be evaluated separately.</li>
+        <li>Need to be documented in a Standards Track RFC.</li>
+        <li>This Standards Track RFC should include initial registrations of actual types.</li>
+        <li>May (or may not) need an IETF WG for definition.</li>
+        <li>Existence of a certain number of subtypes that would be grouped under the new top-level type.
+          At a minimum, one actual subtype should exist. But the existence of a single subtype
+          should not be enough; it should be clear that new similar types may appear in the future.</li>
+        <li>Existing wide use of an undefined top-level type may be an indication of a need,
+          and therefore an argument for formally defining this new top-level type.</li>
+        <li>On the other hand, the use of undefined top-level types is highly discouraged.</li>
+        <li>Top-level types can help humans with understading and debugging.
+          Therefore, evaluating how a new top-level type helps humans understand types
+          may be crucial. But as often with humans, opinions may widely differ.</li>
+        <li>Top-level types are also used frequently in dispatching code.
+          For example "multipart/*" is frequently handled as multipart/mixed, without understanding of a specific subtype.
+          The top-level media types 'image', 'audio', and 'video' are also often handled generically.
+          Documents with these top-level media types can be passed to applications handling a wide variety
+          of image, audio, or video formats. HTML generating applications can select different HTML elements
+          (e.g. &lt;img> or &lt;audio>) for including data of different top-level types.
+          Applications can select different icons to represent unknown types in different top-level types.</li>
+        <li>Need for clear criteria for what types do and don't fall under the new top-level type.</li>
+        <li>Desirability for common parameters: The fact that a group of (potential) types have
+          (mostly) common parameters may be an indication that these belong under a common (new) top-level type.</li>
+      </ul>
+    </section>
     <section><name>Top-Level Media Type History</name>
       <t>This section shortly describes the history of top-level media types, with a particular
       emphasis on the (rather rare) adoption of new top-level types.</t>
@@ -207,38 +237,6 @@
       <t>The two sections above are not strictly aligned, because the first says
       anything that doesn't go under a more specific type can go under the 'application'
       top-level type, while the later section allows for new top-level types.</t>
-    </section>
-    <section><name>Potential Criteria for New Top-Level Media Types</name>
-      <t>This section describes potential criteria for new top-level media types,
-        including criteria already defined in <xref target="RFC6838" format="default">RFC 6838</xref>.
-        Further work is needed to distinguish between required and optional criteria.
-        But it is possible that we end up with just "we didn't find any objective criteria
-        for new top-level types, and we will stop looking for such criteria".</t>
-      <ul>
-        <li>New top level types are rare enough and different enough that each application needs to be evaluated separately.</li>
-        <li>Need to be documented in a Standards Track RFC.</li>
-        <li>This Standards Track RFC should include initial registrations of actual types.</li>
-        <li>May (or may not) need an IETF WG for definition.</li>
-        <li>Existence of a certain number of subtypes that would be grouped under the new top-level type.
-        At a minimum, one actual subtype should exist. But the existence of a single subtype
-        should not be enough; it should be clear that new similar types may appear in the future.</li>
-        <li>Existing wide use of an undefined top-level type may be an indication of a need,
-        and therefore an argument for formally defining this new top-level type.</li>
-        <li>On the other hand, the use of undefined top-level types is highly discouraged.</li>
-        <li>Top-level types can help humans with understading and debugging.
-          Therefore, evaluating how a new top-level type helps humans understand types
-          may be crucial. But as often with humans, opinions may widely differ.</li>
-        <li>Top-level types are also used frequently in dispatching code.
-          For example "multipart/*" is frequently handled as multipart/mixed, without understanding of a specific subtype.
-          The top-level media types 'image', 'audio', and 'video' are also often handled generically.
-          Documents with these top-level media types can be passed to applications handling a wide variety
-          of image, audio, or video formats. HTML generating applications can select different HTML elements
-          (e.g. &lt;img> or &lt;audio>) for including data of different top-level types.
-          Applications can select different icons to represent unknown types in different top-level types.</li>
-        <li>Need for clear criteria for what types do and don't fall under the new top-level type.</li>
-        <li>Desirability for common parameters: The fact that a group of (potential) types have
-        (mostly) common parameters may be an indication that these belong under a common (new) top-level type.</li>
-      </ul>
     </section>
     <section anchor="IANA" numbered="true" toc="default"><name>IANA Considerations</name>
       <t>There is currently no registry of top-level media types,
