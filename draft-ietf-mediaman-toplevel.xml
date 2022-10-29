@@ -100,9 +100,6 @@
       <t>This has been adopted by the Media Type Maintenance (mediaman) IETF WG.
         Comments and discussion about this document
         should be directed to the WG's mailing list at media-types@ietf.org.</t>
-      <t>Currently, this document is a collection of information, ideas, and text snippets
-      that may be helpful in creating the actual specification.
-      None of the current language is intended to be final.</t>
       <section numbered="true" toc="default">
         <name>Requirements Language</name>
         <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
