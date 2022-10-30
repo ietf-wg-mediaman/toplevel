@@ -137,8 +137,8 @@
            Motivations for the requirements are also included.</t>
         <ul>
           <li>Every new top-level type needs to be defined in a Standards Track RFC.
-              This will make sure there is sufficient review and consensus
-              appropriate for a new top-level type.</li>
+              This will make sure there is sufficient community interest, review,
+              and consensus appropriate for a new top-level type.</li>
           <li>The criteria for what types do and do not fall under the new top-level type need to be defined clearly.
               Clear criteria will help expert reviewers to evaluate
               whether a subtype belongs below the new type or not.
@@ -152,8 +152,8 @@
           <li>The registration and actual use of a certain number of subtypes under the new top-level type should be expected.
               At a minimum, one actual subtype should exist. But the existence of a single subtype
               should not be enough; it should be clear that new similar types may appear in the future.
-              Otherwise, the creation of a new top-level type is most probably not justified.
-              Also, the proposers of the new top-level type should be willing to commit
+              Otherwise, the creation of a new top-level type is most probably not justified.</li>
+          <li>The proposers of the new top-level type and the wider community should be willing to commit
               to emitting and consuming the new top-level type in environments that they control.</li>
         </ul>
       </section>
