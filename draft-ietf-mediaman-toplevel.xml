@@ -121,6 +121,8 @@
         including criteria already defined in <xref target="RFC6838" format="title">RFC 6838</xref>.
         Further work is needed to distinguish between required and optional criteria.</t>
       <section><name>Required Criteria</name>
+        <t>The following is the list of required criteria for the definition of a new top level type.
+           Motivations for the requirements are also included.</t>
         <ul>
           <li>Every new top level type needs to be defined in a Standards Track RFC.</li>
           <li>The criteria for what types do and do not fall under the new top-level type need to be defined clearly.
