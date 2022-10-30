@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?xml-model href="rfc7991bis.rnc"?>  
+<?xml-model href="rfc7991bis.rnc"?> 
 <!--<?xml-stylesheet type="text/xsl" href="rfc2629.xslt" ?>-->
 <!-- This third-party XSLT can be enabled for direct transformations in XML processors, including most browsers -->
 <!DOCTYPE rfc [
@@ -42,7 +42,7 @@
     <!-- The abbreviated title is used in the page header - it is only necessary if the 
         full title is longer than 39 characters -->
 
-   <title abbrev="New Top Level Media Types">Guidelines for the Definition of New Top Level Media Types</title>
+   <title abbrev="New Top-level Media Types">Guidelines for the Definition of New Top-Level Media Types</title>
     <seriesInfo name="Internet-Draft" value="draft-ietf-mediaman-toplevel-01"/>
 
    <!-- add 'role="editor"' below for the editors if appropriate -->
@@ -78,7 +78,7 @@
 	 If this element is not present, the default is "Network Working Group",
         which is used by the RFC Editor as a nod to the history of the IETF. -->
 
-   <keyword>Media Type, Top Level</keyword>
+   <keyword>Media Type, Top-Level</keyword>
     <!-- Keywords will be incorporated into HTML output
         files in a meta tag but they have no effect on text or nroff
         output. If you submit your draft to the RFC Editor, the
@@ -105,9 +105,9 @@
         Alternatively, issues can be raised on github at
         https://github.com/ietf-wg-mediaman/toplevel.</t>
       <section numbered="true" toc="default"><name>Background</name>
-        <t>New top level types are rare enough and different enough that each application needs to be evaluated separately.
+        <t>New top-level types are rare enough and different enough that each application needs to be evaluated separately.
         The main protocol extension point for media types are subtypes below each of the main types,
-        in particular below the 'application' top level type.</t>
+        in particular below the 'application' top-level type.</t>
       </section>
       <section numbered="true" toc="default">
         <name>Requirements Language</name>
@@ -121,21 +121,21 @@
         including criteria already defined in <xref target="RFC6838" format="title">RFC 6838</xref>.
         Further work is needed to distinguish between required and optional criteria.</t>
       <section><name>Required Criteria</name>
-        <t>The following is the list of required criteria for the definition of a new top level type.
+        <t>The following is the list of required criteria for the definition of a new top-level type.
            Motivations for the requirements are also included.</t>
         <ul>
-          <li>Every new top level type needs to be defined in a Standards Track RFC.
+          <li>Every new top-level type needs to be defined in a Standards Track RFC.
               This will make sure there is sufficient review and consensus
-              appropriate for a new top level type.</li>
+              appropriate for a new top-level type.</li>
           <li>The criteria for what types do and do not fall under the new top-level type need to be defined clearly.
               Clear criteria will help expert reviewers to evaluate
               whether a subtype belongs below the new type or not.
               If the criteria cannot be defined clearly,
               this is a strong indication that whatever is being
-              talked about is not suitable as a top level type.</li>
-          <li>The document defining the new top level type MUST include initial registrations of actual subtypes.
-              This will help showing the need for the new top level type,
-              will allow to check the appropriateness of the definition of the new top level type,
+              talked about is not suitable as a top-level type.</li>
+          <li>The document defining the new top-level type MUST include initial registrations of actual subtypes.
+              This will help showing the need for the new top-level type,
+              will allow to check the appropriateness of the definition of the new top-level type,
               and will avoid separate work for registering an initial slate of subtypes.</li>
           <li>The registration of a certain number of subtypes under the new top-level type should be espected.
               At a minimum, one actual subtype should exist. But the existence of a single subtype
@@ -164,9 +164,9 @@
         </ul>
       </section>
       <section><name>Negative Criteria</name>
-        <t>This subsection lists negative criteria for top level types, identifying criteria that are explicitly not reasons for a top level type registration.</t>
+        <t>This subsection lists negative criteria for top-level types, identifying criteria that are explicitly not reasons for a top-level type registration.</t>
         <ul>
-          <li>A top level type is not a pointer into another registration space that offers
+          <li>A top-level type is not a pointer into another registration space that offers
             duplicate registrations for existing media types. Example: a top lever type
             of 'oid', leading to types of the form oid/nnnnn, where nnn is an OID designating a 
              specific media format,</li>
@@ -315,7 +315,7 @@
       never have reached even the first draft stage.
       Alexey Melnikov provided the difficult to find pointer
       to <xref target="RFC2077" format="default">RFC 2077</xref>
-      and examples for applications dispatching on top level media types.</t>
+      and examples for applications dispatching on top-level media types.</t>
     </section>
     
   </middle>
