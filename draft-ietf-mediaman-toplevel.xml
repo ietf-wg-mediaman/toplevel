@@ -123,11 +123,16 @@
       <section><name>Required Criteria</name>
         <ul>
           <li>Every new top level type needs to be defined in a Standards Track RFC.</li>
+          <li>The criteria for what types do and do not fall under the new top-level type need to be defined clearly.
+              Clear criteria will help expert reviewers to evaluate
+              whether a subtype belongs below the new type or not.
+              If the criteria cannot be defined clearly,
+              this is a strong indication that whatever is being
+              talked about is not suitable as a top level type.</li>
           <li>This Standards Track RFC should include initial registrations of actual types.</li>
           <li>Existence of a certain number of subtypes that would be grouped under the new top-level type.
             At a minimum, one actual subtype should exist. But the existence of a single subtype
             should not be enough; it should be clear that new similar types may appear in the future.</li>
-          <li>Need for clear criteria for what types do and don't fall under the new top-level type.</li>
         </ul>
       </section>
       <section><name>Additional Considerations</name>
