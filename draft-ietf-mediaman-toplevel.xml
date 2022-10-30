@@ -305,6 +305,7 @@
       <section numbered='false'><name>Changes from draft-ietf-mediaman-toplevel-00
         to draft-ietf-mediaman-toplevel-01</name>
         <ul>
+          <li>In the Introduction, add a Background section.</li>
           <li>Reorganized so that criteria come first, and split criteria section into
           various subsections.</li>
           <li>Add reasons to criteria.</li>
