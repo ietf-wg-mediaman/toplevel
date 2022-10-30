@@ -292,6 +292,7 @@
         <ul>
           <li>Reorganized so that criteria come first, and split criteria section into
           various subsections.</li>
+          <li>Add reasons to criteria.</li>
           <li>Fixes to status and related text pieces.</li>
           <li>Cosmetic fixes, in particular getting rid of 'references in your face' (e.g. "RFC ABCD [RFC ABCD]") little by little.</li>
         </ul>
