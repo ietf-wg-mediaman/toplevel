@@ -148,7 +148,8 @@
           <li>Existing wide use of an undefined top-level type may be an indication of a need,
             and therefore an argument for formally defining this new top-level type.</li>
           <li>On the other hand, the use of undefined top-level types is highly discouraged.</li>
-          <li>May (or may not) need an IETF WG for definition.</li>
+          <li>Use of an IETF WG to define a new top-level may not be needed,
+              but may be advisable.</li>
           <li>Desirability for common parameters: The fact that a group of (potential) types have
             (mostly) common parameters may be an indication that these belong under a common new top-level type.</li>
           <li>Top-level types can help humans with understading and debugging.
