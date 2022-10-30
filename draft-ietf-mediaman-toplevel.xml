@@ -106,8 +106,9 @@
         https://github.com/ietf-wg-mediaman/toplevel.</t>
       <section numbered="true" toc="default"><name>Background</name>
         <t>New top-level types are rare enough and different enough that each application needs to be evaluated separately.
-        The main protocol extension point for media types are subtypes below each of the main types,
-        in particular below the 'application' top-level type.</t>
+        The main protocol extension point for media types are subtypes below each of the main types.
+        For formats that do not fit below any other top-level type,
+        the 'application' top-level type can always be used.</t>
       </section>
       <section numbered="true" toc="default">
         <name>Requirements Language</name>
