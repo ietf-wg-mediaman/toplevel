@@ -100,7 +100,9 @@
         expands this and therefore updates <xref target="RFC6838" format="default">RFC&nbsp;6838</xref>.</t>
       <t>This has been adopted by the Media Type Maintenance (mediaman) IETF WG.
         Comments and discussion about this document
-        should be directed to the WG's mailing list at media-types@ietf.org.</t>
+        should be directed to the WG's mailing list at media-types@ietf.org.
+        Alternatively, issues can be raised on github at
+        https://github.com/ietf-wg-mediaman/toplevel.</t>
       <section numbered="true" toc="default">
         <name>Requirements Language</name>
         <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
