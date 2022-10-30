@@ -291,10 +291,11 @@
       <t>There is currently no registry of top-level media types,
         but the list of top-level types available for registering subtypes
         is available at https://www.iana.org/assignments/media-types/media-types.xhtml.</t>
-        <t>There may be a question of whether there is a need for a formal registry of
-        top-level types. Such a registry might contain pointers to the definitions
-        of the top-level types. As a concrete example, the author of this document
-        has not yet been able to find the definition of the 'model' top-level type.</t>
+        <t>ISSUE: Is there a need for a formal registry of
+        top-level types. Such a registry would contain pointers to the definitions
+        of the top-level types, and pointers to the list of subtypes.
+        As a concrete reason for the need, the author of this document
+        had difficulties to find the definition of the 'model' top-level type.</t>
     </section>
     <section anchor="Security" numbered="true" toc="default"><name>Security Considerations</name>
       <t>This document as such is not expected to introduce any security issues.
