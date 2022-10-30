@@ -185,6 +185,7 @@
             duplicate registrations for existing media types. Example: a top lever type
             of 'oid', leading to types of the form oid/nnnnn, where nnn is an OID designating a 
              specific media format,</li>
+          <li>A new top-level type should not generate aliases for existing widely used types or subtypes.</li>
         </ul>
       </section>
     </section>
