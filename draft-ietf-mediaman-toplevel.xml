@@ -95,9 +95,10 @@
   <middle>
     <section numbered="true" toc="default"><name>Introduction</name>
       <t>This document defines best practices for defining new top-level media types.
-        <xref target="RFC6838" format="title">RFC&nbsp;6838</xref> very consisely defined
-        the conditions for defining additional top-level media types. This document
-        expands this and therefore updates <xref target="RFC6838" format="default">RFC&nbsp;6838</xref>.</t>
+        <xref target="RFC6838" format="title">RFC&nbsp;6838</xref> only summarily gave
+        criteria for defining additional top-level media types. This document provides
+        more detailled criteria for defining additional top-level media types.
+        It therefore updates <xref target="RFC6838" format="title">RFC&nbsp;6838</xref>.</t>
       <t>This has been adopted by the Media Type Maintenance (mediaman) IETF WG.
         Comments and discussion about this document
         should be directed to the WG's mailing list at media-types@ietf.org.
