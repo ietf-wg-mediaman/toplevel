@@ -196,8 +196,10 @@
       </section>
     </section>
     <section><name>Top-Level Media Type History</name>
-      <t>This section shortly describes the history of top-level media types, with a particular
-      emphasis on the (rather rare) adoption of new top-level types.</t>
+      <t>This section shortly describes the history of top-level media types.
+        The emphasis is on the aspects of the history that are relevant
+        to the (rather rare) adoption of new top-level types
+        when writing this document.</t>
       <t><xref target="RFC1341" format="default">RFC 1341</xref> first defined the
       structuring of content types into (top-level) type and subtype, and introduced
       the 'text', 'multipart', 'message', 'image', 'audio', 'video', and 'application' top-level types.
@@ -238,11 +240,17 @@
       <t>The 'font' top-level media type was defined in
         <xref target="RFC8081" format="default">RFC 8081</xref>,
         a work of the 'justfont' IETF WG, in 2017.
+        This was formalizing the widespread use of the unofficial 'font' top level type
+        which people were using in preference to official, registered types.
       </t>
       <t>There is ongoing work on defining a new 'haptics' top-level media type
         in <xref target="HAPTICS" format="default">draft-ietf-mediaman-haptics</xref>.</t>
       <t>Wikipedia (at https://en.wikipedia.org/wiki/Chemical_file_format) reports
-      the unofficial use of a 'chemical' top-level type.</t>
+        the unofficial use of a 'chemical' top-level type.
+        This top-level type was proposed by Peter Murray-Rust and Henry Rzepa
+        at a workshop at the First WWW conference in May 1994.
+        It is in widespread use, but remains unregistered
+        (see https://www.ch.ic.ac.uk/chemime/).</t>
       
       <t>The document currently defining the requirements for new top-level
         media types is <xref target="RFC6838" format="default">RFC 6838</xref>.
