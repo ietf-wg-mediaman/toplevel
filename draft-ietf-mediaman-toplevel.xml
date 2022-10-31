@@ -347,7 +347,8 @@
       never have reached even the first draft stage.
       Alexey Melnikov provided the difficult to find pointer
       to <xref target="RFC2077" format="default">RFC 2077</xref>
-      and examples for applications dispatching on top-level media types.</t>
+      and examples for applications dispatching on top-level media types.
+      Additional information and comments were received from Chris Lilley.</t>
     </section>
     
   </middle>
