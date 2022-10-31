@@ -183,6 +183,9 @@
           <li>Top-level types can help humans with understading and debugging.
             Therefore, evaluating how a new top-level type helps humans understand types
             may be crucial. But as often with humans, opinions may widely differ.</li>
+          <li>Common restrictions may apply to all subtypes of a top-level type.
+            Examples are the restriction to CRLF line endings for subtypes of type 'text'
+            (at least in the context of electronic mail), or on subtypes of type 'multipart'.</li>
           <li>Top-level types are also used frequently in dispatching code.
             For example "multipart/*" is frequently handled as multipart/mixed, without understanding of a specific subtype.
             The top-level media types 'image', 'audio', and 'video' are also often handled generically.
