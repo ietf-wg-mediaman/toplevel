@@ -245,12 +245,12 @@
       </t>
       <t>There is ongoing work on defining a new 'haptics' top-level media type
         in <xref target="HAPTICS" format="default">draft-ietf-mediaman-haptics</xref>.</t>
-      <t>Wikipedia (at https://en.wikipedia.org/wiki/Chemical_file_format) reports
+      <t>A Wikipedia (at https://en.wikipedia.org/wiki/Chemical_file_format) reports
         the unofficial use of a 'chemical' top-level type.
         This top-level type was proposed by Peter Murray-Rust and Henry Rzepa
-        at a workshop at the First WWW conference in May 1994.
-        It is in widespread use, but remains unregistered
-        (see https://www.ch.ic.ac.uk/chemime/).</t>
+        at a workshop at the First WWW conference in May 1994
+        <xref target="CHEMIME" format='default'>CHEMIME</xref>.
+        It is in widespread use, but remains unregistered.</t>
       
       <t>The document currently defining the requirements for new top-level
         media types is <xref target="RFC6838" format="default">RFC 6838</xref>.
@@ -489,6 +489,19 @@
           </front>
           <seriesInfo name='RFC' value='8081'/>
           <seriesInfo name='DOI' value='10.17487/RFC8081'/>
+        </reference>
+        <reference anchor='CHEMIME' target='https://pubs.acs.org/doi/10.1021/ci9803233'>
+          <front>
+            <title>The Application of Chemical Multipurpose Internet Mail Extensions
+              (Chemical MIME) Internet Standards
+              to Electronic Mail and World Wide Web Information Exchange</title>
+            <author initials='H.S.' surname='Rzepa' fullname='Henry S. Rzepa'><organization/></author>
+            <author initials='P.' surname='Murray-Rust' fullname='Peter Murray-Rust'><organization/></author>
+            <author initials='B.' surname='Whitaker' fullname='Benjamin Whitaker'><organization/></author>
+            <date year='1998' month='August' day='14'
+          </front>
+          <note>J. Chem. Inf. Comput. Sci. 1998, 38, 6, 976–982</note>
+          <seriesInfo name='DOI' value='10.1021/ci9803233'/>
         </reference>
         <reference anchor='HAPTICS' target='https://datatracker.ietf.org/doc/draft-ietf-mediaman-haptics/'>
           <front>
