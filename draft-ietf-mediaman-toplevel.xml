@@ -290,7 +290,7 @@
         media types is <xref target="RFC6838" format="default">RFC 6838</xref>.
         Of particular relevance to the work in this document are
         Section 4.2.5 (Application Media Types) and
-        Section 4.2.7 (Additional Top-Level Types).</t>
+        Section 4.2.7 (Additional Top-Level Types).
         These two sections are not strictly aligned, because the first says
         that anything that doesn't go under a more specific type
         can go under the 'application' top-level type,
