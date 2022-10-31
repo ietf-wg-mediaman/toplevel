@@ -288,52 +288,13 @@
       
       <t>The document currently defining the requirements for new top-level
         media types is <xref target="RFC6838" format="default">RFC 6838</xref>.
-        Because we are trying to update what it says, we are citing the two
-        relevant sections, Section 4.2.5 and Section 4.2.7, here.</t>
-        <blockquote>
-        <t>4.2.5.  Application Media Types</t>
-          
-          <t>The "application" top-level type is to be used for discrete data that
-          do not fit under any of the other type names, and particularly for
-          data to be processed by some type of application program.  This is
-          information that must be processed by an application before it is
-          viewable or usable by a user.  Expected uses for the "application"
-          type name include but are not limited to file transfer, spreadsheets,
-          presentations, scheduling data, and languages for "active"
-          (computational) material.  (The last, in particular, can pose
-          security problems that must be understood by implementors.  The
-          "application/postscript" media type registration in [RFC2046]
-          provides a good example of how to handle these issues.)</t>
-          
-          <t>For example, a meeting scheduler might define a standard
-          representation for information about proposed meeting dates.  An
-          intelligent user agent would use this information to conduct a dialog
-          with the user, and might then send additional material based on that
-          dialog.  More generally, there have been several "active" languages
-          developed in which programs in a suitably specialized language are
-          transported to a remote location and automatically run in the
-          recipient's environment.  Such applications may be defined as
-          subtypes of the "application" top-level type.</t>
-          
-          <t>The subtype of "application" will often either be the name or include
-          part of the name of the application for which the data are intended.
-          This does not mean, however, that any application program name may
-          simply be used freely as a subtype of "application"; the subtype
-          needs to be registered.</t>
-        </blockquote>
-        <blockquote>
-        <t>4.2.7.  Additional Top-Level Types</t>
-          
-          <t>In some cases, a new media type may not "fit" under any currently
-          defined top-level type names.  Such cases are expected to be quite
-          rare.  However, if such a case does arise, a new type name can be
-          defined to accommodate it.  Definition of a new top-level type name
-          MUST be done via a Standards Track RFC; no other mechanism can be
-          used to define additional type names.</t>
-        </blockquote>
-      <t>The two sections above are not strictly aligned, because the first says
-      anything that doesn't go under a more specific type can go under the 'application'
-      top-level type, while the later section allows for new top-level types.</t>
+        Of particular relevance to the work in this document are
+        Section 4.2.5 (Application Media Types) and
+        Section 4.2.7 (Additional Top-Level Types).</t>
+        These two sections are not strictly aligned, because the first says
+        that anything that doesn't go under a more specific type
+        can go under the 'application' top-level type,
+        while the later section allows for new top-level types.</t>
     </section>
     <section anchor="IANA" numbered="true" toc="default"><name>IANA Considerations</name>
       <t>There is currently no registry of top-level media types,
