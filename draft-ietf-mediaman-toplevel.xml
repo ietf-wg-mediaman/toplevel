@@ -529,9 +529,9 @@
             <author initials='H.S.' surname='Rzepa' fullname='Henry S. Rzepa'><organization/></author>
             <author initials='P.' surname='Murray-Rust' fullname='Peter Murray-Rust'><organization/></author>
             <author initials='B.' surname='Whitaker' fullname='Benjamin Whitaker'><organization/></author>
-            <date year='1998' month='August' day='14'
+            <date year='1998' month='August' day='14' />
+            <note><t>J. Chem. Inf. Comput. Sci. 1998, 38, 6, 976–982</t></note>
           </front>
-          <note>J. Chem. Inf. Comput. Sci. 1998, 38, 6, 976–982</note>
           <seriesInfo name='DOI' value='10.1021/ci9803233'/>
         </reference>
         <reference anchor='HAPTICS' target='https://datatracker.ietf.org/doc/draft-ietf-mediaman-haptics/'>
