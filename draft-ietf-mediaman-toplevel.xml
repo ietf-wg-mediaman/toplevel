@@ -194,7 +194,7 @@
             For example, while there may be some merit to a mapping from media types
             to URIs, e.g. in the context of RDF, there is very limited merit in a reverse mapping,
             and even less merit in creating a top-level type for such a mapping.
-            The same applies to other protocol elements such as file extensions.
+            The same applies to other protocol elements such as file extensions or URI schemes.
             The recommended solution in case a mapping is needed is to choose a
             single type/subtype and put the additional information in an appropriately
             named parameter.
@@ -262,6 +262,16 @@
         at a workshop at the First WWW conference in May 1994
         <xref target="CHEMIME" format='default'>CHEMIME</xref>.
         It is in widespread use, but remains unregistered.</t>
+      <t>Some Linux desktop logic uses what looks like a top-level type
+        of 'x-scheme-handler' to map URI schemes to applications.
+        In addition, the type 'inode/directory' is used.
+        However, this is a purely local, system-specific use,
+        not intended for exchange. If exchange or standardization
+        are desired, a change from e.g. 'x-scheme-handler/http'
+        to something like 'application/scheme-handler; scheme=http'
+        or 'inode/directory' to 'multipart/inode-directory'
+        or 'application/inode-directory (in all cases, properly registered)
+        is strongly recommened.</t>
       
       <t>The document currently defining the requirements for new top-level
         media types is <xref target="RFC6838" format="default">RFC 6838</xref>.
