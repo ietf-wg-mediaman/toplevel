@@ -189,11 +189,17 @@
             duplicate registrations for existing media types. Example: a top lever type
             of 'oid', leading to types of the form oid/nnnnn, where nnn is an OID designating a 
              specific media format,</li>
-          <li>A top-level type must not be defined for the mapping of other protocol elements.
+          <li>A top-level type must not be defined for the mapping of other protocol elements
+            to media types.
             For example, while there may be some merit to a mapping from media types
-            to URIs, e.g. in the context of RDF, there is no merit in a reverse mapping,
+            to URIs, e.g. in the context of RDF, there is very limited merit in a reverse mapping,
             and even less merit in creating a top-level type for such a mapping.
-            The same applies to other protocol elements such as file extensions.</li>
+            The same applies to other protocol elements such as file extensions.
+            The recommended solution in case a mapping is needed is to choose a
+            single type/subtype and put the additional information in an appropriately
+            named parameter.
+            As an example, information on a file extension '.dcat' can be encoded as
+            'application/octet-string; filename=foo.dcat'.</li>
           <li>A new top-level type should not generate aliases for existing widely used types or subtypes.</li>
           <li>Top-level types with an "X-" prefix neither should be used, nor can such types be registered.
             This is in line with RFC <xref target="RFC6648" format="default">RFC 6648</xref>.</li>
