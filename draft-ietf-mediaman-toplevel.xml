@@ -115,8 +115,13 @@
           In most cases, this requires and is done using the full type
           (i.e. including the subtype, and often some parameters).
           The top-level type can occasionally serve as a fallback for the tentative dispatch
-          to applications handling a very wide range of related formats
-          (e.g. for audio, image, or video).</t>
+          to applications handling a very wide range of related formats.</t>
+        <t>In some older scenarios, it may also be possible to identify a device
+          (e.g. a phone for audio messages, a printer or fax device for images,
+          a video recorder for videos, a computer for 'application' subtypes).
+          However, the current hardware landscape,
+          where computers and smart phones can handle a very wide variety of media,
+          makes such a scenario look somewhat far-fetched.</t>
         <t>The top-level type can be used for user-directed information.
           Besides direct inspection of the type string by the user,
           this includes using different types of default icons
