@@ -207,7 +207,7 @@
         <t>This subsection lists negative criteria for top-level types, identifying criteria that are explicitly not reasons for a top-level type registration.</t>
         <ul>
           <li>A top-level type is not a pointer into another registration space that offers
-            duplicate registrations for existing media types. Example: a top lever type
+            duplicate registrations for existing media types. Example: a top-level type
             of 'oid', leading to types of the form oid/nnnnn, where nnn is an OID designating a 
              specific media format,</li>
           <li>A top-level type MUST NOT be defined for the mapping of other protocol elements
