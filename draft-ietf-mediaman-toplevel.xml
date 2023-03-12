@@ -169,6 +169,8 @@
               At a minimum, one actual subtype SHOULD exist. But the existence of a single subtype
               SHOULD not be enough; it SHOULD be clear that new similar types may appear in the future.
               Otherwise, the creation of a new top-level type is most probably not justified.</li>
+          <li>Any RFC defining a new top-level type MUST clearly document the security considerations
+              applying to all or a significant subset of subtypes.</li>
           <li>The proposers of the new top-level type and the wider community should be willing to commit
               to emitting and consuming the new top-level type in environments that they control.</li>
         </ul>
@@ -308,8 +310,8 @@
         https://www.iana.org/assignments/media-types/media-types.xhtml if that is
         compatible with IANAs infrastructure.</t>
       <t>For each top-level media type, the registry contains the name of the type,
-        a pointer to the RFC defining the type, a pointer to the registry of subtypes,
-        and a comment field.</t>
+        a pointer to the RFC defining the type, a pointer to IANA's registry of subtypes
+        for that type, and a comment field.</t>
       <t>The comment field is empty or contains short comments about the usage of the type.
         As an example, the comment field for the 'text' type may contain a comment saying
       "requires CRLF for newlines". As another example, the comment field for the 'example'
