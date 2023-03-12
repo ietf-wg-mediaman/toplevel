@@ -148,6 +148,9 @@
           <li>Every new top-level type MUST be defined in a Standards Track RFC.
               This will make sure there is sufficient community interest, review,
               and consensus appropriate for a new top-level type.</li>
+          <li>The IANA Considerations section of an RFC defining a new top-level type
+              MUST request that IANA add this new top-level type to the registry
+              of top-level types.</li>
           <li>The criteria for what types do and do not fall
               under the new top-level type need to be defined clearly.
               Clear criteria are expected to help expert reviewers to evaluate
@@ -300,14 +303,19 @@
         while the later section allows for new top-level types.</t>
     </section>
     <section anchor="IANA" numbered="true" toc="default"><name>IANA Considerations</name>
-      <t>There is currently no registry of top-level media types,
-        but the list of top-level types available for registering subtypes
-        is available at https://www.iana.org/assignments/media-types/media-types.xhtml.</t>
-        <t>ISSUE: Is there a need for a formal registry of
-        top-level types. Such a registry would contain pointers to the definitions
-        of the top-level types, and pointers to the list of subtypes.
-        As a concrete reason for the need, the author of this document
-        had difficulties to find the definition of the 'model' top-level type.</t>
+      <t>IANA is requested to create and populate a registry of top-level media types,
+        This can be done by expanding the "Registries included below" section of
+        https://www.iana.org/assignments/media-types/media-types.xhtml if that is
+        compatible with IANAs infrastructure.</t>
+      <t>For each top-level media type, the registry contains the name of the type,
+        a pointer to the RFC defining the type, a pointer to the registry of subtypes,
+        and a comment field.</t>
+      <t>The comment field is empty or contains short comments about the usage of the type.
+        As an example, the comment field for the 'text' type may contain a comment saying
+      "requires CRLF for newlines". As another example, the comment field for the 'example'
+       type may say "no registrations, for examples only".
+       Comments can be added or updated by the experts for subtype registrations and
+       by IANA itself.</t>
     </section>
     <section anchor="Security" numbered="true" toc="default"><name>Security Considerations</name>
       <t>This document as such is not expected to introduce any security issues.
