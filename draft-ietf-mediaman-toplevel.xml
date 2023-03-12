@@ -18,7 +18,7 @@
       xmlns:xi="http://www.w3.org/2001/XInclude"
       category="bcp"
       consensus="true"
-      docName="draft-ietf-mediaman-toplevel-01"
+      docName="draft-ietf-mediaman-toplevel-02"
       ipr="trust200902"
       obsoletes=""
       updates="6838"
@@ -43,7 +43,7 @@
         full title is longer than 39 characters -->
 
    <title abbrev="New Top-level Media Types">Guidelines for the Definition of New Top-Level Media Types</title>
-    <seriesInfo name="Internet-Draft" value="draft-ietf-mediaman-toplevel-01"/>
+    <seriesInfo name="Internet-Draft" value="draft-ietf-mediaman-toplevel-02"/>
 
    <!-- add 'role="editor"' below for the editors if appropriate -->
    <author fullname="Martin J. Dürst" initials="M.J." surname="Dürst">
@@ -61,7 +61,7 @@
         <!-- uri and facsimile elements may also be added -->
      </address>
     </author>
-    <date year="2022"/>
+    <date year="2023"/>
     <!-- If the month and year are both specified and are the current ones, xml2rfc will fill 
         in the current day for you. If only the current year is specified, xml2rfc will fill 
 	 in the current day and month for you. If the year is not the current one, it is 
