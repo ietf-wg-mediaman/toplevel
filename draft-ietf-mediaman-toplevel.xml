@@ -205,7 +205,7 @@
             duplicate registrations for existing media types. Example: a top lever type
             of 'oid', leading to types of the form oid/nnnnn, where nnn is an OID designating a 
              specific media format,</li>
-          <li>A top-level type must not be defined for the mapping of other protocol elements
+          <li>A top-level type MUST NOT be defined for the mapping of other protocol elements
             to media types.
             For example, while there may be some merit to a mapping from media types
             to URIs, e.g. in the context of RDF, there is very limited merit in a reverse mapping,
