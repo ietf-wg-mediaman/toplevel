@@ -221,6 +221,9 @@
             named parameter.
             As an example, information on a file extension '.dcat' can be encoded as
             'application/octet-string; filename=foo.dcat'.</li>
+          <li>Media types are not a general type system.
+            A top-level type MUST NOT be defined if its main or only purpose is
+            to map other type systems, e.g. in programming languages or ontologies.</li>
           <li>A new top-level type SHOULD NOT generate aliases for existing widely used types or subtypes.</li>
           <li>Top-level types with an "X-" prefix cannot be registered, and SHOULD NOT be used.
             This is in line with RFC <xref target="RFC6648" format="default"></xref>.</li>
