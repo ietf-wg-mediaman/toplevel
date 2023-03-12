@@ -18,7 +18,7 @@
       xmlns:xi="http://www.w3.org/2001/XInclude"
       category="bcp"
       consensus="true"
-      docName="draft-ietf-mediaman-toplevel-02"
+      docName="draft-ietf-mediaman-toplevel-03"
       ipr="trust200902"
       obsoletes=""
       updates="6838"
@@ -43,7 +43,7 @@
         full title is longer than 39 characters -->
 
    <title abbrev="New Top-level Media Types">Guidelines for the Definition of New Top-Level Media Types</title>
-    <seriesInfo name="Internet-Draft" value="draft-ietf-mediaman-toplevel-02"/>
+    <seriesInfo name="Internet-Draft" value="draft-ietf-mediaman-toplevel-03"/>
 
    <!-- add 'role="editor"' below for the editors if appropriate -->
    <author fullname="Martin J. Dürst" initials="M.J." surname="Dürst">
@@ -329,8 +329,7 @@
     </section>
     <section anchor="Changelog" numbered='false' toc='default'><name>Changelog</name>
       <t>RFC Editor, please remove this section before publication.</t>
-      <section numbered='false'><name>Changes from draft-ietf-mediaman-toplevel-01
-        to draft-ietf-mediaman-toplevel-02</name>
+      <section numbered='false'><name>Changes from draft-ietf-mediaman-toplevel-01 Onwards</name>
         <ul>
           <li>See https://github.com/ietf-wg-mediaman/toplevel/commits/main/draft-ietf-mediaman-toplevel.xml.</li>
         </ul>
