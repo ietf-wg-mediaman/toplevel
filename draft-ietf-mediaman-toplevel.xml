@@ -320,6 +320,9 @@
        type may say "no registrations, for examples only".
        Comments can be added or updated by the experts for subtype registrations and
        by IANA itself.</t>
+      <t>Registrations of new top-level types follow the "RFC required" policy
+      (see <xref target="RFC8126" format="title">RFC 8126, Section 4.7</xref>),
+      where additionally, the RFC must be a Standards Track RFC.</t>
     </section>
     <section anchor="Security" numbered="true" toc="default"><name>Security Considerations</name>
       <t>This document as such is not expected to introduce any security issues.
