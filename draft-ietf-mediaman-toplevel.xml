@@ -43,7 +43,7 @@
         full title is longer than 39 characters -->
 
    <title abbrev="New Top-level Media Types">Guidelines for the Definition of New Top-Level Media Types</title>
-    <seriesInfo name="Internet-Draft" value="draft-ietf-mediaman-toplevel-03"/>
+    <seriesInfo name="Internet-Draft" value="draft-ietf-mediaman-toplevel-04"/>
 
    <!-- add 'role="editor"' below for the editors if appropriate -->
    <author fullname="Martin J. Dürst" initials="M.J." surname="Dürst">
