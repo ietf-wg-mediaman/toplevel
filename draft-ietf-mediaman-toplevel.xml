@@ -144,7 +144,7 @@
         <t>The following is the list of required criteria for the definition of a new top-level type.
            Motivations for the requirements are also included.</t>
         <ul>
-          <li>Every new top-level type MUST be defined in a Standards Track RFC.
+          <li>Every new top-level type MUST be defined in a Standards Track RFC (see <xref target="RFC8126" format="title">RFC 8126, Section 4.7</xref>).
               This will make sure there is sufficient community interest, review,
               and consensus appropriate for a new top-level type.</li>
           <li>The IANA Considerations section of an RFC defining a new top-level type
@@ -523,6 +523,23 @@
           </front>
           <seriesInfo name='RFC' value='8081'/>
           <seriesInfo name='DOI' value='10.17487/RFC8081'/>
+        </reference>
+        <reference anchor='RFC8126' target='https://www.rfc-editor.org/rfc/rfc8126.html#section-4.7'>
+          <front>
+            <title>Guidelines for Writing an IANA Considerations Section in RFCs</title>
+            <author fullname="M. Cotton" initials="M." surname="Cotton"/>
+            <author fullname="B. Leiba" initials="B." surname="Leiba"/>
+            <author fullname="T. Narten" initials="T." surname="Narten"/>
+            <date month="June" year="2017"/>
+            <abstract>
+              <t>Many protocols make use of points of extensibility that use constants to identify various protocol parameters. To ensure that the values in these fields do not have conflicting uses and to promote interoperability, their allocations are often coordinated by a central record keeper. For IETF protocols, that role is filled by the Internet Assigned Numbers Authority (IANA).</t>
+              <t>To make assignments in a given registry prudently, guidance describing the conditions under which new values should be assigned, as well as when and how modifications to existing values can be made, is needed. This document defines a framework for the documentation of these guidelines by specification authors, in order to assure that the provided guidance for the IANA Considerations is clear and addresses the various issues that are likely in the operation of a registry.</t>
+              <t>This is the third edition of this document; it obsoletes RFC 5226.</t>
+            </abstract>
+          </front>
+          <seriesInfo name="BCP" value="26"/>
+          <seriesInfo name="RFC" value="8126"/>
+          <seriesInfo name="DOI" value="10.17487/RFC8126"/>
         </reference>
         <reference anchor='CHEMIME' target='https://pubs.acs.org/doi/10.1021/ci9803233'>
           <front>
