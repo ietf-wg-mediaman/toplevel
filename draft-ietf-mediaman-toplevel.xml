@@ -258,8 +258,8 @@
         status  and  to  avoid  a  potential  conflict with a future
         official name.</blockquote>
         <t>The first time an additional top-level type was defined was in
-          <xref target="RFC1437" format="default">RFC 1437</xref>, but this
-          was purely for entertainment purposes (please check date).</t>
+          <xref target="RFC1437" format="default">RFC 1437</xref>, but this was
+          an April Fools RFC, purely for entertainment purposes.</t>
       <t><xref target="RFC2046" format="default">RFC 2046</xref> discouraged
       the use of "X-" for (new) top-level types, with the following words:</t>
       <blockquote>In general, the use of "X-" top-level types is strongly discouraged.
