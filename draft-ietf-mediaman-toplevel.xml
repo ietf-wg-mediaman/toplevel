@@ -164,7 +164,7 @@
               If the criteria cannot be defined clearly,
               this is a strong indication that whatever is being
               talked about is not suitable as a top-level type.</li>
-          <li>The document defining the new top-level type MUST include
+          <li>The document defining the new top-level type SHOULD include
               initial registrations of actual subtypes.
               This will help to show the need for the new top-level type,
               will allow to check the appropriateness of the definition of the new top-level type,
