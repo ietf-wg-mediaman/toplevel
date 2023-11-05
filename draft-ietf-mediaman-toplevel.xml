@@ -145,8 +145,7 @@
     </section>
     <section><name>Rules for the Registration of New Top-Level Media Types</name>
       <t>This section describes the rules and criteria for new top-level media types,
-        including criteria already defined in <xref target="RFC6838" format="title">RFC 6838</xref>.
-        Further work is needed to distinguish between required and optional criteria.</t>
+        including criteria already defined in <xref target="RFC6838" format="title">RFC 6838</xref>.</t>
       <section><name>Required Criteria</name>
         <t>The following is the list of required criteria for the definition of a new top-level type.
            Motivations for the requirements are also included.</t>
