@@ -119,7 +119,9 @@
           In most cases, this requires and is done using the full type
           (i.e. including the subtype, and often some parameters).
           The top-level type can occasionally serve as a fallback for the tentative dispatch
-          to applications handling a very wide range of related formats.</t>
+          to applications handling a very wide range of related formats.
+          Please note that assumptions about the correctness of a media type
+          must be made carefully, as it could be under the control of an attacker.</t>
         <t>In some older scenarios, it may also be possible to identify a device
           (e.g. a phone for audio messages, a printer or fax device for images,
           a video recorder for videos, a computer for 'application' subtypes).
