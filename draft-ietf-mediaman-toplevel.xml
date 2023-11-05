@@ -143,7 +143,7 @@
           appear in all capitals, as shown here.</t>
       </section>
     </section>
-    <section><name>Rules for the Registration of New Top-Level Media Types</name>
+    <section><name>Rules and Criteria for the Registration of New Top-Level Media Types</name>
       <t>This section describes the rules and criteria for new top-level media types,
         including criteria already defined in <xref target="RFC6838" format="title">RFC 6838</xref>.</t>
       <section><name>Required Criteria</name>
