@@ -328,7 +328,8 @@
       <t>IANA is requested to create and populate a registry of top-level media types,
         This should be done by expanding the "Registries included below" section of
         https://www.iana.org/assignments/media-types/media-types.xhtml (assuming this is
-        compatible with IANA infrastructure).</t>
+        compatible with IANA infrastructure; if not, then there should be
+        at least a pointer from that page to this new registry).</t>
       <t>For each top-level media type, the registry contains the name of the type,
         a pointer to the RFC defining the type, a pointer to IANA's registry of subtypes
         for that type, and a comment field.</t>
@@ -350,6 +351,8 @@
           <tr><td>video</td><td>RFC 2046</td><td>[pointer to be added by IANA]</td><td>-</td></tr>
         </tbody>
       </table>
+      <t>IANA is also requested to add pointers to this document and to the new registry in
+      the application page at https://www.iana.org/form/media-types.</t>
       </section>
     </section>
     <section anchor="Security" numbered="true" toc="default"><name>Security Considerations</name>
@@ -395,7 +398,7 @@
       to <xref target="RFC2077" format="default">RFC 2077</xref>
       and examples for applications dispatching on top-level media types.
       Additional information and comments were received from
-      Chris Lilley, Graham Kline, Henry S. Rzepa, Zaheduzzaman Sarker,
+      Chris Lilley, Graham Kline, Henry S. Rzepa, Francesca Palombini, Zaheduzzaman Sarker,
       Amanda Baber, Paul Wouters, Roman Danyliw, John Scudder, Radia Perlman, and Lars Eggert.
       Inspiration for negative criteria or examples was provided by Phillip Hallam-Baker,
       Donald E. Eastlake 3rd, Petter Reinholdtsen, and Christian Heller.</t>
