@@ -105,7 +105,7 @@
         tree) are indicated immediately to the right of the slash with a prefix of '.../vnd.' or '.../prs.'.
         <xref target="RFC6838" format="title">RFC&nbsp;6838</xref>, Section 4.2.7
         only summarily gave criteria for defining additional top-level media types.
-        This document provides more detailled criteria for defining additional top-level media types.
+        This document provides more detailed criteria for defining additional top-level media types.
         It therefore updates <xref target="RFC6838" format="title">RFC&nbsp;6838</xref>.</t>
 
       <section numbered="true" toc="default"><name>Background</name>
@@ -160,7 +160,7 @@
               Clear criteria are expected to help expert reviewers to evaluate
               whether a subtype belongs below the new type or not,
               and whether the registration template for a subtype
-              contains the approriate information.
+              contains the appropriate information.
               If the criteria cannot be defined clearly,
               this is a strong indication that whatever is being
               talked about is not suitable as a top-level type.</li>
@@ -192,7 +192,7 @@
               (<xref target="HAPTICS" format="default">draft-ietf-mediaman-haptics</xref>).</li>
           <li>Desirability for common parameters: The fact that a group of (potential) types have
             (mostly) common parameters may be an indication that these belong under a common new top-level type.</li>
-          <li>Top-level types can help humans with understading and debugging.
+          <li>Top-level types can help humans with understanding and debugging.
             Therefore, evaluating how a new top-level type helps humans understand types
             may be crucial. But as often with humans, opinions may widely differ.</li>
           <li>Common restrictions may apply to all subtypes of a top-level type.
