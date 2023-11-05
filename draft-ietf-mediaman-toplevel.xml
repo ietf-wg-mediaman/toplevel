@@ -307,22 +307,45 @@
         while the later section allows for new top-level types.</t>
     </section>
     <section anchor="IANA" numbered="true" toc="default"><name>IANA Considerations</name>
+      <section anchor='IANAregister' numbered='true' toc='default'><name>Registration of Top-level Media Types</name>
+        <t>Registrations of new top-level types follow the "RFC required" policy
+        (see <xref target="RFC8126" format="title">RFC 8126, Section 4.7</xref>),
+        where additionally, the RFC must be a Standards Track RFC.</t>
+        <t>Registrations of new top-level types have to provide
+          the name of the top-level type,
+          the defining specification (RFC, or the respective draft during the approval process),
+          and, if applicable, some comments.</t>
+        <t>The comments field is empty or contains short comments about the usage of the type.
+          Comments can be added or updated by the experts for subtype registrations
+          under the respective top-level type, and by IANA itself.</t>
+      </section>
+      <section anchor='IANAinitial' numbered='true' toc='default'><name>Initialization of the Registry of Top-level Media Types</name>
       <t>IANA is requested to create and populate a registry of top-level media types,
-        This can be done by expanding the "Registries included below" section of
-        https://www.iana.org/assignments/media-types/media-types.xhtml if that is
-        compatible with IANAs infrastructure.</t>
+        This should be done by expanding the "Registries included below" section of
+        https://www.iana.org/assignments/media-types/media-types.xhtml (assuming this is
+        compatible with IANA infrastructure).</t>
       <t>For each top-level media type, the registry contains the name of the type,
         a pointer to the RFC defining the type, a pointer to IANA's registry of subtypes
         for that type, and a comment field.</t>
-      <t>The comment field is empty or contains short comments about the usage of the type.
-        As an example, the comment field for the 'text' type may contain a comment saying
-      "requires CRLF for newlines". As another example, the comment field for the 'example'
-       type may say "no registrations, for examples only".
-       Comments can be added or updated by the experts for subtype registrations and
-       by IANA itself.</t>
-      <t>Registrations of new top-level types follow the "RFC required" policy
-      (see <xref target="RFC8126" format="title">RFC 8126, Section 4.7</xref>),
-      where additionally, the RFC must be a Standards Track RFC.</t>
+      <t>The initial state of the registry is as follows:</t>
+      <table>
+        <name>Initial Values for the Registry of Top-level Media Types</name>
+        <thead><tr><th>name</th><th>Defining RFC</th><th>Registry of Subtypes</th><th>Comments</th></tr></thead>
+        <tbody>
+          <tr><td>application</td><td>RFC 2046</td><td>[pointer to be added by IANA]</td><td>-</td></tr>
+          <tr><td>audio</td><td>RFC 2046</td><td>[pointer to be added by IANA]</td><td>-</td></tr>
+          <tr><td>font</td><td>RFC 8081</td><td>[pointer to be added by IANA]</td><td>-</td></tr>
+          <tr><td>example</td><td>RFC 4735</td><td>-</td><td>no registrations, for examples only</td></tr>
+          <tr><td>image</td><td>RFC 2046</td><td>[pointer to be added by IANA]</td><td>-</td></tr>
+          <tr><td>haptics</td><td>RFC <xref target="HAPTICS" format="default" /></td><td>[pointer to be added by IANA]</td><td>-</td></tr>
+          <tr><td>message</td><td>RFC 2046</td><td>[pointer to be added by IANA]</td><td>-</td></tr>
+          <tr><td>model</td><td>RFC 2077</td><td>[pointer to be added by IANA]</td><td>-</td></tr>
+          <tr><td>multipart</td><td>RFC 2046</td><td>[pointer to be added by IANA]</td><td>-</td></tr>
+          <tr><td>text</td><td>RFC 2046</td><td>[pointer to be added by IANA]</td><td>requires CRLF for newlines</td></tr>
+          <tr><td>video</td><td>RFC 2046</td><td>[pointer to be added by IANA]</td><td>-</td></tr>
+        </tbody>
+      </table>
+      </section>
     </section>
     <section anchor="Security" numbered="true" toc="default"><name>Security Considerations</name>
       <t>This document as such is not expected to introduce any security issues.
@@ -367,7 +390,8 @@
       to <xref target="RFC2077" format="default">RFC 2077</xref>
       and examples for applications dispatching on top-level media types.
       Additional information and comments were received from
-      Chris Lilley, Graham Kline, and Henry S. Rzepa.
+      Chris Lilley, Graham Kline, Henry S. Rzepa, Zaheduzzaman Sarker,
+      Amanda Baber, Paul Wouters, Radia Perlman, and Lars Eggert.
       Inspiration for negative criteria or examples was provided by Phillip Hallam-Baker,
       Donald E. Eastlake 3rd, Petter Reinholdtsen, and Christian Heller.</t>
     </section>
@@ -426,6 +450,23 @@
           <seriesInfo name="BCP" value="14"/>
           <seriesInfo name="RFC" value="8174"/>
           <seriesInfo name="DOI" value="10.17487/RFC8174"/>
+        </reference>
+        <reference anchor='RFC8126' target='https://www.rfc-editor.org/rfc/rfc8126.html#section-4.7'>
+          <front>
+            <title>Guidelines for Writing an IANA Considerations Section in RFCs</title>
+            <author fullname="M. Cotton" initials="M." surname="Cotton"/>
+            <author fullname="B. Leiba" initials="B." surname="Leiba"/>
+            <author fullname="T. Narten" initials="T." surname="Narten"/>
+            <date month="June" year="2017"/>
+            <abstract>
+              <t>Many protocols make use of points of extensibility that use constants to identify various protocol parameters. To ensure that the values in these fields do not have conflicting uses and to promote interoperability, their allocations are often coordinated by a central record keeper. For IETF protocols, that role is filled by the Internet Assigned Numbers Authority (IANA).</t>
+              <t>To make assignments in a given registry prudently, guidance describing the conditions under which new values should be assigned, as well as when and how modifications to existing values can be made, is needed. This document defines a framework for the documentation of these guidelines by specification authors, in order to assure that the provided guidance for the IANA Considerations is clear and addresses the various issues that are likely in the operation of a registry.</t>
+              <t>This is the third edition of this document; it obsoletes RFC 5226.</t>
+            </abstract>
+          </front>
+          <seriesInfo name="BCP" value="26"/>
+          <seriesInfo name="RFC" value="8126"/>
+          <seriesInfo name="DOI" value="10.17487/RFC8126"/>
         </reference>
         
 
@@ -526,23 +567,6 @@
           </front>
           <seriesInfo name='RFC' value='8081'/>
           <seriesInfo name='DOI' value='10.17487/RFC8081'/>
-        </reference>
-        <reference anchor='RFC8126' target='https://www.rfc-editor.org/rfc/rfc8126.html#section-4.7'>
-          <front>
-            <title>Guidelines for Writing an IANA Considerations Section in RFCs</title>
-            <author fullname="M. Cotton" initials="M." surname="Cotton"/>
-            <author fullname="B. Leiba" initials="B." surname="Leiba"/>
-            <author fullname="T. Narten" initials="T." surname="Narten"/>
-            <date month="June" year="2017"/>
-            <abstract>
-              <t>Many protocols make use of points of extensibility that use constants to identify various protocol parameters. To ensure that the values in these fields do not have conflicting uses and to promote interoperability, their allocations are often coordinated by a central record keeper. For IETF protocols, that role is filled by the Internet Assigned Numbers Authority (IANA).</t>
-              <t>To make assignments in a given registry prudently, guidance describing the conditions under which new values should be assigned, as well as when and how modifications to existing values can be made, is needed. This document defines a framework for the documentation of these guidelines by specification authors, in order to assure that the provided guidance for the IANA Considerations is clear and addresses the various issues that are likely in the operation of a registry.</t>
-              <t>This is the third edition of this document; it obsoletes RFC 5226.</t>
-            </abstract>
-          </front>
-          <seriesInfo name="BCP" value="26"/>
-          <seriesInfo name="RFC" value="8126"/>
-          <seriesInfo name="DOI" value="10.17487/RFC8126"/>
         </reference>
         <reference anchor='CHEMIME' target='https://pubs.acs.org/doi/10.1021/ci9803233'>
           <front>
