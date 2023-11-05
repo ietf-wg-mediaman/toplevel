@@ -98,9 +98,14 @@
   <middle>
     <section numbered="true" toc="default"><name>Introduction</name>
       <t>This document defines best practices for defining new top-level media types.
-        <xref target="RFC6838" format="title">RFC&nbsp;6838</xref> only summarily gave
-        criteria for defining additional top-level media types. This document provides
-        more detailled criteria for defining additional top-level media types.
+        Top-level media types appear to the left of the slash in a media type,
+        examples being 'text/...', 'application/...', 'image/...', and so on.
+        Please note that top-level media types are different from trees
+        (standards tree, vendor tree, personal tree), which except for the standards
+        tree) are indicated immediately to the right of the slash with a prefix of '.../vnd.' or '.../prs.'.
+        <xref target="RFC6838" format="title">RFC&nbsp;6838</xref>, Section 4.2.7
+        only summarily gave criteria for defining additional top-level media types.
+        This document provides more detailled criteria for defining additional top-level media types.
         It therefore updates <xref target="RFC6838" format="title">RFC&nbsp;6838</xref>.</t>
 
       <section numbered="true" toc="default"><name>Background</name>
