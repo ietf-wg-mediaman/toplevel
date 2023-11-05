@@ -126,7 +126,7 @@
           (e.g. a phone for audio messages, a printer or fax device for images,
           a video recorder for videos, a computer for 'application' subtypes).
           However, the current hardware landscape,
-          where computers and smart phones can handle a very wide variety of media,
+          where computers and smartphones can handle a very wide variety of media,
           makes such a scenario look somewhat far-fetched.</t>
         <t>The top-level type can be used for user-directed information.
           Besides direct inspection of the type string by the user,
