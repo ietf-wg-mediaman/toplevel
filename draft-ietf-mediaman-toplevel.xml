@@ -151,7 +151,7 @@
            Motivations for the requirements are also included.</t>
         <ul>
           <li>Every new top-level type MUST be defined in a Standards Track RFC
-              (see <xref target="RFC8126" format="title">RFC 8126, Section 4.7</xref>).
+              (see <xref target="RFC8126" format="title">RFC 8126, Section 4.9</xref>).
               This will make sure there is sufficient community interest, review,
               and consensus appropriate for a new top-level type.</li>
           <li>The IANA Considerations section of an RFC defining a new top-level type
@@ -470,7 +470,7 @@
           <seriesInfo name="RFC" value="8174"/>
           <seriesInfo name="DOI" value="10.17487/RFC8174"/>
         </reference>
-        <reference anchor='RFC8126' target='https://www.rfc-editor.org/rfc/rfc8126.html#section-4.7'>
+        <reference anchor='RFC8126' target='https://www.rfc-editor.org/rfc/rfc8126.html#section-4.9'>
           <front>
             <title>Guidelines for Writing an IANA Considerations Section in RFCs</title>
             <author fullname="M. Cotton" initials="M." surname="Cotton"/>
