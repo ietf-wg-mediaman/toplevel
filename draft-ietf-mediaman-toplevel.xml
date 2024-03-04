@@ -150,7 +150,8 @@
         <t>The following is the list of required criteria for the definition of a new top-level type.
            Motivations for the requirements are also included.</t>
         <ul>
-          <li>Every new top-level type MUST be defined in a Standards Track RFC (see <xref target="RFC8126" format="title">RFC 8126, Section 4.7</xref>).
+          <li>Every new top-level type MUST be defined in a Standards Track RFC
+              (see <xref target="RFC8126" format="title">RFC 8126, Section 4.7</xref>).
               This will make sure there is sufficient community interest, review,
               and consensus appropriate for a new top-level type.</li>
           <li>The IANA Considerations section of an RFC defining a new top-level type
@@ -213,7 +214,8 @@
         </ul>
       </section>
       <section><name>Negative Criteria</name>
-        <t>This subsection lists negative criteria for top-level types, identifying criteria that are explicitly not reasons for a top-level type registration.</t>
+        <t>This subsection lists negative criteria for top-level types,
+          identifying criteria that are explicitly not reasons for a top-level type registration.</t>
         <ul>
           <li>A top-level type is not a pointer into another registration space that offers
             duplicate registrations for existing media types. Example: a top-level type
