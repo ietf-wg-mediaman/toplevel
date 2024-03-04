@@ -328,6 +328,8 @@
         <t>The comments field is empty or contains short comments about the usage of the type.
           Comments can be added or updated by the experts for subtype registrations
           under the respective top-level type, and by IANA itself.</t>
+        <t>There should be at least one subtype, except for registrations that are
+          for demonstration purposes only (e.g. the example top-level type).</t>
       </section>
       <section anchor='IANAinitial' numbered='true' toc='default'><name>Initialization of the Registry of Top-level Media Types</name>
       <t>IANA is requested to create and populate a registry of top-level media types,
