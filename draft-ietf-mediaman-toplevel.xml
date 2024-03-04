@@ -321,7 +321,9 @@
         <t>Registrations of new top-level types have to provide
           the name of the top-level type,
           the defining specification (RFC, or the respective draft during the approval process),
-          and, if applicable, some comments.</t>
+          and, if applicable, some comments.
+          They have to contain a "IANA Considerations" section requesting addition to this registry,
+          and have to document security considerations for the top-level types they register.</t>
         <t>The comments field is empty or contains short comments about the usage of the type.
           Comments can be added or updated by the experts for subtype registrations
           under the respective top-level type, and by IANA itself.</t>
