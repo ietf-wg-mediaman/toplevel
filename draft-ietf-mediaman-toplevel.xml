@@ -317,9 +317,8 @@
     </section>
     <section anchor="IANA" numbered="true" toc="default"><name>IANA Considerations</name>
       <section anchor='IANAregister' numbered='true' toc='default'><name>Registration of Top-level Media Types</name>
-        <t>Registrations of new top-level types follow the "RFC required" policy
-        (see <xref target="RFC8126" format="title">RFC 8126, Section 4.7</xref>),
-        where additionally, the RFC must be a Standards Track RFC.</t>
+        <t>Registrations of new top-level types follow the "Standard Action" policy
+        (see <xref target="RFC8126" format="title">RFC 8126, Section 4.9</xref>).</t>
         <t>Registrations of new top-level types have to provide
           the name of the top-level type,
           the defining specification (RFC, or the respective draft during the approval process),
