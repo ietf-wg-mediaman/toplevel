@@ -167,6 +167,8 @@
               talked about is not suitable as a top-level type.</li>
           <li>Any RFC defining a new top-level type MUST clearly document the security considerations
               applying to all or a significant subset of subtypes.</li>
+          <li>At the minimum, one subtype MUST be defined.
+              A top-level type without any actual subtype serves no purpose.</li>
         </ul>
       </section>
       <section><name>Additional Considerations</name>
@@ -187,8 +189,8 @@
               will allow checking the appropriateness of the definition of the new top-level type,
               and will avoid separate work for registering an initial slate of subtypes.</li>
           <li>The registration and actual use of a certain number of subtypes under the new top-level type should be expected.
-              At a minimum, one actual subtype should exist. But the existence of a single subtype
-              should not be enough; it should be clear that new similar types may appear in the future.
+              The existence of a single subtype should not be enough;
+              it should be clear that new similar types may appear in the future.
               Otherwise, the creation of a new top-level type is most probably not justified.</li>
           <li>The proposers of the new top-level type and the wider community should be willing to commit
               to emitting and consuming the new top-level type in environments that they control.</li>
