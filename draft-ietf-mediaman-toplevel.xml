@@ -167,8 +167,9 @@
               talked about is not suitable as a top-level type.</li>
           <li>Any RFC defining a new top-level type MUST clearly document the security considerations
               applying to all or a significant subset of subtypes.</li>
-          <li>At the minimum, one subtype MUST be defined.
-              A top-level type without any actual subtype serves no purpose.</li>
+          <li>At the minimum, one subtype MUST be described.
+              A top-level type without any subtype serves no purpose.
+              Please note that the 'example' top-level describes a subtype 'example'.</li>
         </ul>
       </section>
       <section><name>Additional Considerations</name>
