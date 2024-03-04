@@ -407,7 +407,8 @@
       and examples for applications dispatching on top-level media types.
       Additional information and comments were received from
       Chris Lilley, Graham Kline, Henry S. Rzepa, Francesca Palombini, Zaheduzzaman Sarker,
-      Amanda Baber, Paul Wouters, Roman Danyliw, John Scudder, Radia Perlman, and Lars Eggert.
+      Amanda Baber, Paul Wouters, Roman Danyliw, John Scudder, Radia Perlman, Lars Eggert,
+      and Antoine Fressancourt.
       Inspiration for negative criteria or examples was provided by Phillip Hallam-Baker,
       Donald E. Eastlake 3rd, Petter Reinholdtsen, and Christian Heller.</t>
     </section>
