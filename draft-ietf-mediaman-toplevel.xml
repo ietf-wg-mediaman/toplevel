@@ -241,8 +241,7 @@
     <section><name>Top-Level Media Type History</name>
       <t>This section briefly describes the history of top-level media types.
         The emphasis is on the aspects of the history that are relevant
-        to the (rather rare) adoption of new top-level types
-        when writing this document.</t>
+        to the adoption of new top-level types.</t>
       <t><xref target="RFC1341" format="default">RFC 1341</xref> first defined the
       structuring of content types into (top-level) type and subtype, and introduced
       the 'text', 'multipart', 'message', 'image', 'audio', 'video', and 'application' top-level types.
