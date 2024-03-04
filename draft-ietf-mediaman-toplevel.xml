@@ -288,7 +288,7 @@
       </t>
       <t>There is ongoing work on defining a new 'haptics' top-level media type
         in <xref target="HAPTICS" format="default">draft-ietf-mediaman-haptics</xref>.</t>
-      <t>A Wikipedia (at https://en.wikipedia.org/wiki/Chemical_file_format) reports
+      <t>Wikipedia (at https://en.wikipedia.org/wiki/Chemical_file_format) reports
         the unofficial use of a 'chemical' top-level type.
         This top-level type was proposed by Peter Murray-Rust and Henry Rzepa
         at a workshop at the First WWW conference in May 1994
