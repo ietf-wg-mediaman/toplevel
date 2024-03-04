@@ -157,7 +157,7 @@
               MUST request that IANA add this new top-level type to the registry
               of top-level types.</li>
           <li>The criteria for what types do and do not fall
-              under the new top-level type need to be defined clearly.
+              under the new top-level type MUST be defined clearly.
               Clear criteria are expected to help expert reviewers to evaluate
               whether a subtype belongs below the new type or not,
               and whether the registration template for a subtype
@@ -165,20 +165,8 @@
               If the criteria cannot be defined clearly,
               this is a strong indication that whatever is being
               talked about is not suitable as a top-level type.</li>
-          <li>The document defining the new top-level type should include
-              initial registrations of actual subtypes.
-              The exception may be a top-level type similar to 'example'.
-              This will help to show the need for the new top-level type,
-              will allow checking the appropriateness of the definition of the new top-level type,
-              and will avoid separate work for registering an initial slate of subtypes.</li>
-          <li>The registration and actual use of a certain number of subtypes under the new top-level type should be expected.
-              At a minimum, one actual subtype should exist. But the existence of a single subtype
-              should not be enough; it should be clear that new similar types may appear in the future.
-              Otherwise, the creation of a new top-level type is most probably not justified.</li>
           <li>Any RFC defining a new top-level type MUST clearly document the security considerations
               applying to all or a significant subset of subtypes.</li>
-          <li>The proposers of the new top-level type and the wider community should be willing to commit
-              to emitting and consuming the new top-level type in environments that they control.</li>
         </ul>
       </section>
       <section><name>Additional Considerations</name>
@@ -192,6 +180,18 @@
               with a short, dedicated WG (<xref target="RFC8081" format="default">RFC 8081</xref>),
               and with a WG that included other related work
               (<xref target="HAPTICS" format="default">draft-ietf-mediaman-haptics</xref>).</li>
+          <li>The document defining the new top-level type should include
+              initial registrations of actual subtypes.
+              The exception may be a top-level type similar to 'example'.
+              This will help to show the need for the new top-level type,
+              will allow checking the appropriateness of the definition of the new top-level type,
+              and will avoid separate work for registering an initial slate of subtypes.</li>
+          <li>The registration and actual use of a certain number of subtypes under the new top-level type should be expected.
+              At a minimum, one actual subtype should exist. But the existence of a single subtype
+              should not be enough; it should be clear that new similar types may appear in the future.
+              Otherwise, the creation of a new top-level type is most probably not justified.</li>
+          <li>The proposers of the new top-level type and the wider community should be willing to commit
+              to emitting and consuming the new top-level type in environments that they control.</li>
           <li>Desirability for common parameters: The fact that a group of (potential) types have
             (mostly) common parameters may be an indication that these belong under a common new top-level type.</li>
           <li>Top-level types can help humans with understanding and debugging.
