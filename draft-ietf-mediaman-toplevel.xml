@@ -305,7 +305,7 @@
         to something like 'application/scheme-handler; scheme=http'
         or 'inode/directory' to 'multipart/inode-directory'
         or 'application/inode-directory (in all cases, properly registered)
-        is strongly recommened.</t>
+        is strongly recommended.</t>
       
       <t>The document currently defining the requirements for new top-level
         media types is <xref target="RFC6838" format="default">RFC 6838</xref>.
