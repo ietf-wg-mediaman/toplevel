@@ -101,8 +101,8 @@
         Top-level media types appear to the left of the slash in a media type,
         examples being 'text/...', 'application/...', 'image/...', and so on.
         Please note that top-level media types are different from trees
-        (standards tree, vendor tree, personal tree), which except for the standards
-        tree) are indicated immediately to the right of the slash with a prefix of '.../vnd.' or '.../prs.'.
+        (standards tree, vendor tree, personal tree), which (except for the standards tree)
+        are indicated immediately to the right of the slash with a prefix of '.../vnd.' or '.../prs.'.
         <xref target="RFC6838" format="title">RFC&nbsp;6838</xref>, Section 4.2.7
         only summarily gave criteria for defining additional top-level media types.
         This document provides more detailed criteria for defining additional top-level media types.
