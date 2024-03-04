@@ -322,7 +322,8 @@
           the name of the top-level type,
           the defining specification (RFC, or the respective draft during the approval process),
           and, if applicable, some comments.
-          They have to contain a "IANA Considerations" section requesting addition to this registry,
+          They have to contain a "IANA Considerations" section requesting addition
+          to the registry of top-level media types,
           and have to document security considerations for the top-level types they register.</t>
         <t>The comments field is empty or contains short comments about the usage of the type.
           Comments can be added or updated by the experts for subtype registrations
