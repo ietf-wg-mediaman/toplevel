@@ -178,7 +178,7 @@
           <li>Existing wide use of an undefined top-level type may be an indication of a need,
             and therefore an argument for formally defining this new top-level type.</li>
           <li>On the other hand, the use of undefined top-level types is highly discouraged.</li>
-          <li>Use of an IETF WG to define a new top-level type is not be needed,
+          <li>Use of an IETF WG to define a new top-level type is not needed,
               but may be advisable in some cases. There are examples of new top-level type definitions
               without a WG (<xref target="RFC2077" format="default">RFC 2077</xref>),
               with a short, dedicated WG (<xref target="RFC8081" format="default">RFC 8081</xref>),
