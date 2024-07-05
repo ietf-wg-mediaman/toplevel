@@ -287,7 +287,7 @@
       <t>The 'font' top-level media type was defined in
         <xref target="RFC8081" format="default">RFC 8081</xref>,
         a work of the 'justfont' IETF WG, in 2017.
-        This was formalizing the widespread use of the unofficial 'font' top level type
+        This was formalizing the widespread use of the unofficial 'font' top-level type
         which people were using in preference to official, registered types.
       </t>
       <t>There is ongoing work on defining a new 'haptics' top-level media type
