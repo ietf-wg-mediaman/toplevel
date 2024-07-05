@@ -219,8 +219,8 @@
         <ul>
           <li>A top-level type is not a pointer into another registration space that offers
             duplicate registrations for existing media types. Example: a top-level type
-            of 'oid', leading to types of the form oid/nnnnn, where nnn is an OID designating a 
-             specific media format,</li>
+            of 'oid', leading to types of the form oid/nnnnn, where nnn is an OID
+            (Object Identifier) designating a specific media format,</li>
           <li>A top-level type MUST NOT be defined for the mapping of other protocol elements
             to media types.
             For example, while there may be some merit to a mapping from media types
