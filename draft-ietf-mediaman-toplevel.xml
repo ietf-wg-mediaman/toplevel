@@ -224,7 +224,8 @@
           <li>A top-level type MUST NOT be defined for the mapping of other protocol elements
             to media types.
             For example, while there may be some merit to a mapping from media types
-            to URIs, e.g. in the context of RDF, there is very limited merit in a reverse mapping,
+            to URIs, e.g. in the context of RDF (Resource Description Framework),
+            there is very limited merit in a reverse mapping,
             and even less merit in creating a top-level type for such a mapping.
             The same applies to other protocol elements such as file extensions or URI schemes.
             The recommended solution in case a mapping is needed is to choose a
