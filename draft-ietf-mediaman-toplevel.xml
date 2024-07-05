@@ -123,7 +123,7 @@
           to applications handling a very wide range of related formats.
           Please note that assumptions about the correctness of a media type
           must be made carefully, as it could be under the control of an attacker.</t>
-        <t>In some older scenarios, it may also be possible to identify a device
+        <t>In some older scenarios, it may also have been possible to identify a device
           (e.g. a phone for audio messages, a printer or fax device for images,
           a video recorder for videos, a computer for 'application' subtypes).
           However, the current hardware landscape,
