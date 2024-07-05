@@ -103,10 +103,10 @@
         Please note that top-level media types are different from trees
         (standards tree, vendor tree, personal tree), which (except for the standards tree)
         are indicated immediately to the right of the slash with a prefix of '.../vnd.' or '.../prs.'.
-        <xref target="RFC6838" format="title">RFC&nbsp;6838</xref>, Section 4.2.7
+        <xref target="RFC6838" format="default">RFC&nbsp;6838</xref>, Section 4.2.7
         only summarily gave criteria for defining additional top-level media types.
         This document provides more detailed criteria for defining additional top-level media types.
-        It therefore updates <xref target="RFC6838" format="title">RFC&nbsp;6838</xref>.</t>
+        It therefore updates <xref target="RFC6838" format="default">RFC&nbsp;6838</xref>.</t>
 
       <section numbered="true" toc="default"><name>Background</name>
         <t>New top-level types are rare enough and different enough from each other
@@ -145,13 +145,13 @@
     </section>
     <section><name>Rules and Criteria for the Registration of New Top-Level Media Types</name>
       <t>This section describes the rules and criteria for new top-level media types,
-        including criteria already defined in <xref target="RFC6838" format="title">RFC 6838</xref>.</t>
+        including criteria already defined in <xref target="RFC6838" format="default">RFC 6838</xref>.</t>
       <section><name>Required Criteria</name>
         <t>The following is the list of required criteria for the definition of a new top-level type.
            Motivations for the requirements are also included.</t>
         <ul>
           <li>Every new top-level type MUST be defined in a Standards Track RFC
-              (see <xref target="RFC8126" format="title">RFC 8126, Section 4.9</xref>).
+              (see <xref target="RFC8126" format="default">RFC 8126, Section 4.9</xref>).
               This will make sure there is sufficient community interest, review,
               and consensus appropriate for a new top-level type.</li>
           <li>The IANA Considerations section of an RFC defining a new top-level type
@@ -320,7 +320,7 @@
     <section anchor="IANA" numbered="true" toc="default"><name>IANA Considerations</name>
       <section anchor='IANAregister' numbered='true' toc='default'><name>Registration of Top-level Media Types</name>
         <t>Registrations of new top-level types follow the "Standards Action" policy
-        (see <xref target="RFC8126" format="title">RFC 8126, Section 4.9</xref>).</t>
+        (see <xref target="RFC8126" format="default">RFC 8126, Section 4.9</xref>).</t>
         <t>Registrations of new top-level types have to provide
           the name of the top-level type,
           the defining specification (RFC, or the respective draft during the approval process),
