@@ -98,14 +98,15 @@
   <middle>
     <section numbered="true" toc="default"><name>Introduction</name>
       <t>This document defines best practices for defining new top-level media types.
-        Top-level media types appear to the left of the slash in a media type,
+        Top-level media types ('top-level types' for short)
+        appear to the left of the slash in a media type,
         examples being 'text/...', 'application/...', 'image/...', and so on.
-        Please note that top-level media types are different from trees
+        Please note that top-level types are different from trees
         (standards tree, vendor tree, personal tree), which (except for the standards tree)
         are indicated immediately to the right of the slash with a prefix of '.../vnd.' or '.../prs.'.
         <xref target="RFC6838" format="default">RFC&nbsp;6838</xref>, Section 4.2.7
-        only summarily gave criteria for defining additional top-level media types.
-        This document provides more detailed criteria for defining additional top-level media types.
+        only summarily gave criteria for defining additional top-level types.
+        This document provides more detailed criteria for defining additional top-level types.
         It therefore updates <xref target="RFC6838" format="default">RFC&nbsp;6838</xref>.</t>
 
       <section numbered="true" toc="default"><name>Background</name>
@@ -144,7 +145,7 @@
       </section>
     </section>
     <section><name>Rules and Criteria for the Registration of New Top-Level Media Types</name>
-      <t>This section describes the rules and criteria for new top-level media types,
+      <t>This section describes the rules and criteria for new top-level types,
         including criteria already defined in <xref target="RFC6838" format="default">RFC 6838</xref>.</t>
       <section><name>Required Criteria</name>
         <t>The following is the list of required criteria for the definition of a new top-level type.
@@ -207,8 +208,8 @@
             (at least in the context of electronic mail), or on subtypes of type 'multipart'.</li>
           <li>Top-level types are also used frequently in dispatching code.
             For example "multipart/*" is frequently handled as multipart/mixed, without understanding of a specific subtype.
-            The top-level media types 'image', 'audio', and 'video' are also often handled generically.
-            Documents with these top-level media types can be passed to applications handling a wide variety
+            The top-level types 'image', 'audio', and 'video' are also often handled generically.
+            Documents with these top-level types can be passed to applications handling a wide variety
             of image, audio, or video formats. HTML generating applications can select different HTML elements
             (e.g. &lt;img> or &lt;audio>) for including data of different top-level types.
             Applications can select different icons to represent unknown types in different top-level types.</li>
@@ -244,7 +245,7 @@
       </section>
     </section>
     <section><name>Top-Level Media Type History</name>
-      <t>This section briefly describes the history of top-level media types.
+      <t>This section briefly describes the history of top-level types.
         The emphasis is on the aspects of the history that are relevant
         to the adoption of new top-level types.</t>
       <t><xref target="RFC1341" format="default">RFC 1341</xref> first defined the
@@ -284,13 +285,13 @@
       <t>The 'model' top-level type was introduced by <xref target="RFC2077" format="default">RFC 2077</xref> in 1997.</t>
       <t><xref target="RFC4735" format="default">RFC 4735</xref> introduced the
       'example' top-level type for use in documentation examples.</t>
-      <t>The 'font' top-level media type was defined in
+      <t>The 'font' top-level type was defined in
         <xref target="RFC8081" format="default">RFC 8081</xref>,
         a work of the 'justfont' IETF WG, in 2017.
         This was formalizing the widespread use of the unofficial 'font' top-level type
         which people were using in preference to official, registered types.
       </t>
-      <t>There is ongoing work on defining a new 'haptics' top-level media type
+      <t>There is ongoing work on defining a new 'haptics' top-level type
         in <xref target="HAPTICS" format="default">draft-ietf-mediaman-haptics</xref>.</t>
       <t>Wikipedia (at https://en.wikipedia.org/wiki/Chemical_file_format) reports
         the unofficial use of a 'chemical' top-level type.
@@ -408,7 +409,7 @@
       never have reached even the first draft stage.
       Alexey Melnikov provided the difficult to find pointer
       to <xref target="RFC2077" format="default">RFC 2077</xref>
-      and examples for applications dispatching on top-level media types.
+      and examples for applications dispatching on top-level types.
       Additional information and comments were received from
       Chris Lilley, Graham Kline, Henry S. Rzepa, Francesca Palombini, Zaheduzzaman Sarker,
       Amanda Baber, Paul Wouters, Roman Danyliw, John Scudder, Radia Perlman, Lars Eggert,
