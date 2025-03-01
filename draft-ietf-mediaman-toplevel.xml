@@ -325,9 +325,9 @@ Perhaps:
         to something like 'application/scheme-handler; scheme=http'.
         The type 'inode/directory' should be changed to 'multipart/inode-directory'
         or 'application/inode-directory.</t>
-      <t>The document currently defining the requirements for new top-level
-        media types is RFC 6838 <xref target="RFC6838" format="default"/>.
-        Of particular relevance to the work in this document are
+      <t>The document that previously defined the requirements for new top-level
+        media types was RFC 6838 <xref target="RFC6838" format="default"/>.
+        Of particular relevance to the work in the current document are
         Sections <xref target="RFC6838" section="4.2.5" sectionFormat="bare"/> (Application Media Types) and
         <xref target="RFC6838" section="4.2.7" sectionFormat="bare"/> (Additional Top-Level Types) of <xref target="RFC6838"/>.
         These two sections are not strictly aligned, because the first says
