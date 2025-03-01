@@ -409,7 +409,7 @@ Notes:
           <tr><td>audio</td><td><xref target="RFC2046"/></td><td>[<eref target="https://www.iana.org/assignments/media-types/">Audio Media Types</eref>]</td><td>-</td></tr>
           <tr><td>example</td><td><xref target="RFC4735"/></td><td>[Example Media Types]</td><td>no registrations, for examples only</td></tr>
           <tr><td>font</td><td><xref target="RFC8081"/></td><td>[Font Media Types]</td><td>-</td></tr>
-          <tr><td>haptics</td><td><xref target="RFC9695"/> <xref target="RFC9695" format="default" /></td><td>[Haptics Media Types]</td><td>-</td></tr>
+          <tr><td>haptics</td><td><xref target="RFC9695"/></td><td>[Haptics Media Types]</td><td>-</td></tr>
           <tr><td>image</td><td><xref target="RFC2046"/></td><td>[Image Media Types]</td><td>-</td></tr>
           <tr><td>message</td><td><xref target="RFC2046"/></td><td>[Message Media Types] 	</td><td>-</td></tr>
           <tr><td>model</td><td><xref target="RFC2077"/></td><td>[Model Media Types]</td><td>-</td></tr>
