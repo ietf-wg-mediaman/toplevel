@@ -319,11 +319,12 @@ Perhaps:
         In addition, the type 'inode/directory' is used.
         However, this is a purely local, system-specific use,
         and is not intended for exchange. If exchange or standardization
-        are desired, a change from, for example, 'x-scheme-handler/http'
-        to something like 'application/scheme-handler; scheme=http'
-        or 'inode/directory' to 'multipart/inode-directory'
-        or 'application/inode-directory (in all cases, properly registered)
-        is strongly recommended.</t>
+        are desired, different types (in all cases, properly registered)
+        are strongly recommended.
+        For example, 'x-scheme-handler/http' should be changed
+        to something like 'application/scheme-handler; scheme=http'.
+        The type 'inode/directory' should be changed to 'multipart/inode-directory'
+        or 'application/inode-directory.</t>
       <t>The document currently defining the requirements for new top-level
         media types is RFC 6838 <xref target="RFC6838" format="default"/>.
         Of particular relevance to the work in this document are
