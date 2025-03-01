@@ -127,7 +127,7 @@ https://www.rfc-editor.org/bcps
               and whether the registration template for a subtype
               contains the appropriate information.
               Criteria that cannot be defined clearly
-              is a strong indication that whatever is being
+              are a strong indication that whatever is being
               talked about is not suitable as a top-level type.</li>
           <li>Any RFC defining a new top-level type <bcp14>MUST</bcp14> clearly document the security considerations
               applying to all or a significant subset of subtypes.</li>
