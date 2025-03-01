@@ -403,7 +403,7 @@ Notes:
 
       <table anchor="tab1">
         <name>Initial Values for the Registry of Top-level Media Types</name>
-        <thead><tr><th>name</th><th>Defining RFC</th><th>Registry of Subtypes</th><th>Comments</th></tr></thead>
+        <thead><tr><th>Name</th><th>Defining RFC</th><th>Registry of Subtypes</th><th>Comments</th></tr></thead>
         <tbody>
           <tr><td>application</td><td><xref target="RFC2046"/></td><td>[<eref target="https://www.iana.org/assignments/media-types/">Application Media Types</eref>]</td><td>-</td></tr>
           <tr><td>audio</td><td><xref target="RFC2046"/></td><td>[<eref target="https://www.iana.org/assignments/media-types/">Audio Media Types</eref>]</td><td>-</td></tr>
