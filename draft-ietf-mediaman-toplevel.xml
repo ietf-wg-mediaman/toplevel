@@ -361,8 +361,8 @@ Current:
    level types they register.
 -->
 
-          The defining specifications have to contain an "IANA Considerations" section requesting addition
-          to the registry of top-level media types and document security considerations for the top-level types they register.</t>
+          The defining specification has to contain an "IANA Considerations" section requesting addition
+          to the registry of top-level media types,  and has to document security considerations for the top-level type they register.</t>
         <t>The comments field is empty or contains short comments about the usage of the type.
           Comments can be added or updated by the experts for subtype registrations
           under the respective top-level type, and by IANA itself.</t>
